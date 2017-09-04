@@ -1,0 +1,4 @@
+docker:
+  tag: ardubugs:base
+  file: Dockerfile
+  context: .
