@@ -1,0 +1,7 @@
+bug: 027552e
+dataset: ardu
+program: copter
+docker:
+  tag: ardubugs:027552e
+  file: Dockerfile.bug
+  context: 027552e
