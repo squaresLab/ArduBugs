@@ -1,5 +1,5 @@
 bug: 027552e
-dataset: ardu
+dataset: ardubugs
 program: copter
 docker:
   tag: ardubugs:027552e

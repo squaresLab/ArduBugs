@@ -37,41 +37,38 @@ RUN sudo apt-get update && \
 
 WORKDIR /experiment
 
-
-RUN sudo apt-get update && \
-    sudo apt-get install -y libtool \
+RUN sudo apt-get update
+RUN sudo apt-get install -y libtool \
                             automake \
                             pkg-config \
                             autoconf \
                             gcc \
                             g++ \
-                            libexpat1-dev \
-                            python-matplotlib \
-                            python-serial \
+                            gawk \
+                            libexpat1-dev
+RUN sudo apt-get update
+RUN sudo apt-get install -y python-pip
+RUN sudo apt-get install -y python-matplotlib
+RUN sudo apt-get install -y python-serial \
                             python-wxgtk2.8 \
-                            python-wxtools \
-                            python-lxml \
+                            python-wxtools
+RUN sudo apt-get update
+RUN sudo apt-get install -y python-lxml \
                             python-scipy \
                             python-opencv \
-                            ccache \
-                            gawk \
-                            python-pip \
-                            flightgear \
-                            python-pexpect && \
-    sudo pip install future pymavlink MAVProxy && \
-    sudo pip install --upgrade pexpect && \
-    sudo apt-get clean && \
-    sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+                            python-pexpect
+RUN sudo apt-get install -y ccache
+RUN sudo apt-get install -y flightgear
+RUN sudo pip install future pymavlink MAVProxy
+RUN sudo pip install --upgrade pexpect
 
-RUN git clone git://github.com/tridge/jsbsim && \
+RUN sudo mkdir -p /experiment/jsbsim && \
+    sudo chown -R $USER:$USER /experiment && \
+    sudo git clone git://github.com/tridge/jsbsim jsbsim --depth 1
+RUN sudo chown -R docker:docker /experiment && \
     cd jsbsim && \
     ./autogen.sh --enable-libraries && \
     make -j
-
-RUN sudo apt-get update && \
-    sudo apt-get install -y flightgear && \
-    sudo apt-get clean && \
-    sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENV PATH "${PATH}:/experiment/jsbsim/src"
 ENV PATH "${PATH}:/experiment/source/Tools/autotest"
@@ -111,4 +108,4 @@ RUN cd "${ARDUPILOT_LOCATION}" && \
 
 # ADD copter.parm /experiment/
 ADD tester.py /experiment/source/Tools/autotest/tester.py
-RUN sudo chown -R $USER:$USER source
+RUN sudo chown -R docker:docker source
