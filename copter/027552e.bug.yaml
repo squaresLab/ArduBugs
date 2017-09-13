@@ -5,3 +5,4 @@ docker:
   tag: ardubugs:027552e
   file: Dockerfile.bug
   context: 027552e
+  depends-on: squareslab/ardubugs:027552e
