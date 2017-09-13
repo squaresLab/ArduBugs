@@ -4,5 +4,5 @@ docker:
   context: 2e6b6e4
   depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
-  tag: ardubugs:2e6b6e4
+  tag: squareslab/ardubugs:2e6b6e4
 program: copter

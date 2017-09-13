@@ -1,4 +1,4 @@
-FROM squaresLab/ardubugs:base
+FROM squareslab/ardubugs:base
 
 ADD . bugFiles
 RUN sudo chown -R $USER:$USER bugFiles && \
