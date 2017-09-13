@@ -1,8 +1,8 @@
-bug: 027552e
+bug: 0d9b943
 dataset: ardubugs
 docker:
-  context: 027552e
+  context: 0d9b943
   depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
-  tag: ardubugs:027552e
+  tag: ardubugs:0d9b943
 program: copter
