@@ -1,4 +1,4 @@
 docker:
-  tag: ardubugs:base
+  tag: squareslab/ardubugs:base
   file: Dockerfile
   context: .
