@@ -1,4 +1,7 @@
 bug: 9ac892a
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: 9ac892a

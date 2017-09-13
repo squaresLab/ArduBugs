@@ -1,4 +1,7 @@
 bug: 9f59f27
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: 9f59f27

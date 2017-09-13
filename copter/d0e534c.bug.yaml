@@ -1,4 +1,7 @@
 bug: d0e534c
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: d0e534c

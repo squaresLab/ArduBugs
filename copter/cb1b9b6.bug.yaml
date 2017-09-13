@@ -1,4 +1,7 @@
 bug: cb1b9b6
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: cb1b9b6

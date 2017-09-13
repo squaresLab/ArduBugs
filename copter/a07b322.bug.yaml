@@ -1,4 +1,7 @@
 bug: a07b322
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: a07b322

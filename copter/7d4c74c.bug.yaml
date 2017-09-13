@@ -1,4 +1,7 @@
 bug: 7d4c74c
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: 7d4c74c

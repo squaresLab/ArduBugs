@@ -1,4 +1,7 @@
 bug: a17fc9e
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: a17fc9e

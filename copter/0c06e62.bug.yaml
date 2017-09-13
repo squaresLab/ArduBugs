@@ -1,4 +1,7 @@
 bug: 0c06e62
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: 0c06e62

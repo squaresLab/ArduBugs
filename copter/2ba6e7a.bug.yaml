@@ -1,4 +1,7 @@
 bug: 2ba6e7a
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: 2ba6e7a

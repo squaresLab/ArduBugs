@@ -1,4 +1,7 @@
 bug: 1858a05
+compilation:
+  command: ./waf build -j$(nproc)
+  context: /experiment/source
 dataset: ardubugs
 docker:
   context: 1858a05
