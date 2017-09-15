@@ -5,7 +5,7 @@ compilation:
 dataset: ardubugs
 docker:
   context: 2e6b6e4
-  depends-on: squareslab/ardubugs:base
+  depends-on: squareslab/ardubugs:copter
   file: Dockerfile.bug
   tag: squareslab/ardubugs:2e6b6e4
 program: copter
