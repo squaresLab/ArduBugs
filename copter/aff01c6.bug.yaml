@@ -9,3 +9,17 @@ docker:
   file: Dockerfile.bug
   tag: squareslab/ardubugs:aff01c6
 program: copter
+test-harness:
+  command: python test-harness.py __ID__
+  context: /experiment
+  tests:
+  - throttle_failsafebattery_failsafehorizontal_fencesquare_stabilize
+  - stability_patch
+  - gps_glitch_loiter
+  - gps_glitch_auto
+  - loiter_ten
+  - simple
+  - super_simple
+  - circle
+  - copter_mission
+  type: simple

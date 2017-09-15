@@ -1,13 +1,13 @@
-bug: a07b322
+bug: base
 compilation:
   command: ./waf build -j$(nproc)
   context: /experiment/source
 dataset: ardubugs
 docker:
-  context: a07b322
+  context: base
   depends-on: squareslab/ardubugs:copter
   file: Dockerfile.bug
-  tag: squareslab/ardubugs:a07b322
+  tag: squareslab/ardubugs:base
 program: copter
 test-harness:
   command: python test-harness.py __ID__
