@@ -13,7 +13,10 @@ test-harness:
   command: python test-harness.py __ID__
   context: /experiment
   tests:
-  - throttle_failsafebattery_failsafehorizontal_fencesquare_stabilize
+  - throttle_failsafe
+  - battery_failsafe
+  - horizontal_fence
+  - square_stabilize
   - stability_patch
   - gps_glitch_loiter
   - gps_glitch_auto
