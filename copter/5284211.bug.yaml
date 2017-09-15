@@ -22,4 +22,5 @@ test-harness:
   - super_simple
   - circle
   - copter_mission
+  time-limit: 90
   type: simple
