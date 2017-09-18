@@ -10,11 +10,9 @@ RUN apt-get update && \
     apt-get clean && \
     mkdir -p /home/docker && \
     sudo chown -R docker /home/docker && \
+    sudo chown -R docker /usr/local/bin && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 USER docker
-
-# reclaim ownership or /usr/local/bin
-RUN sudo chown -R docker /usr/local/bin
 
 # install basic packages
 RUN sudo apt-get update && \
@@ -35,38 +33,39 @@ RUN sudo apt-get update && \
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*  
 
-WORKDIR /experiment
-
-RUN sudo apt-get update
-RUN sudo apt-get install -y libtool \
+RUN sudo apt-get update && \
+    sudo apt-get install -y libtool \
                             automake \
                             pkg-config \
                             autoconf \
                             gcc \
                             g++ \
-                            gawk \
-                            libexpat1-dev
-RUN sudo apt-get update
-RUN sudo apt-get install -y python-pip
-RUN sudo apt-get install -y python-matplotlib
-RUN sudo apt-get install -y python-serial \
+                            libexpat1-dev \
+                            python-matplotlib \
+                            python-serial \
                             python-wxgtk2.8 \
-                            python-wxtools
-RUN sudo apt-get update
-RUN sudo apt-get install -y python-lxml \
+                            python-wxtools \
+                            python-lxml \
                             python-scipy \
                             python-opencv \
-                            python-pexpect
-RUN sudo apt-get install -y ccache
-RUN sudo apt-get install -y flightgear
-RUN sudo pip install future pymavlink MAVProxy
-RUN sudo pip install --upgrade pexpect
+                            ccache \
+                            gawk \
+                            python-pip \
+                            flightgear \
+                            python-pexpect \
+			                      bash && \
+    sudo pip install future MAVProxy && \ 
+    sudo pip install --upgrade pexpect && \
+    sudo apt-get clean && \
+    sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN sudo mkdir -p /experiment/jsbsim && \
-    sudo chown -R $USER:$USER /experiment && \
-    sudo git clone git://github.com/tridge/jsbsim jsbsim --depth 1
-RUN sudo chown -R docker:docker /experiment && \
+# download and install jsbsim
+WORKDIR /experiment
+ENV JSBSIM_REVISION 9cc2bf1
+RUN sudo chown -R $(whoami):$(whoami) /experiment && \
+    git clone https://github.com/arktools/jsbsim /experiment/jsbsim && \
     cd jsbsim && \
+    git checkout "${JSBSIM_REVISION}" && \
     ./autogen.sh --enable-libraries && \
     make -j
 
@@ -75,6 +74,7 @@ ENV PATH "${PATH}:/experiment/source/Tools/autotest"
 ENV PATH "${PATH}:/usr/lib/ccache:${PATH}"
 ENV PATH "/usr/games:${PATH}"
 
+# download ArduPilot source code
 ENV ARDUPILOT_REVISION 7173025
 RUN git clone https://github.com/ArduPilot/ardupilot source && \
     cd source && \
@@ -83,12 +83,11 @@ RUN git clone https://github.com/ArduPilot/ardupilot source && \
     sudo chown -R $(whoami):$(whoami) /experiment
 
 RUN sudo pip install  future \
-                      MAVProxy \
                       dronekit \
                       statistics \
                       geopy \
                       flask
-
+                      #MAVProxy \
 
 ENV ARDUPILOT_LOCATION "/experiment/source"
 
@@ -96,16 +95,20 @@ ADD default.parm /experiment/
 ADD default_eeprom.bin /experiment/
 RUN cp /experiment/default_eeprom.bin /experiment/eeprom.bin
 
+# install dronekit SITL
 RUN git clone https://github.com/dronekit/dronekit-sitl.git /experiment/dronekit-sitl && \
     cd /experiment/dronekit-sitl && \
     git checkout 2d854af && \
     sudo python setup.py install
 
-
+# compile ArduPilot
 RUN cd "${ARDUPILOT_LOCATION}" && \
     ./waf configure && \
     ./waf build -j$(nproc)
 
-# ADD copter.parm /experiment/
 ADD tester.py /experiment/source/Tools/autotest/tester.py
-RUN sudo chown -R docker:docker source
+RUN sudo chown -R $(whoami):$(whoami) source
+
+# fixes indefinite timeout in default test harness
+RUN sudo pip uninstall -y mavproxy && \
+    sudo pip install mavproxy
