@@ -110,5 +110,5 @@ ADD tester.py /experiment/source/Tools/autotest/tester.py
 RUN sudo chown -R $(whoami):$(whoami) source
 
 # fixes indefinite timeout in default test harness
-RUN sudo pip uninstall -y mavproxy && \
-    sudo pip install mavproxy
+RUN sudo pip uninstall -y pymavlink && \
+    sudo pip install pymavlink
