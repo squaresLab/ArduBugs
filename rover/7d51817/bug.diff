@@ -1,0 +1,13 @@
+diff --git a/APMrover2/APMrover2.cpp b/APMrover2/APMrover2.cpp
+index 134d81b..8b1d60f 100644
+--- a/APMrover2/APMrover2.cpp
++++ b/APMrover2/APMrover2.cpp
+@@ -105,7 +105,7 @@ void Rover::setup()
+     init_ardupilot();
+ 
+     // initialise the main loop scheduler
+-    scheduler.init(&scheduler_tasks[0], ARRAY_SIZE(scheduler_tasks));
++    scheduler.init(&scheduler_tasks[0], ARRAY_SIZE(scheduler_tasks), this);
+ }
+ 
+ /*
