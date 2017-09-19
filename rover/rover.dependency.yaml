@@ -1,0 +1,5 @@
+docker:
+  tag: squareslab/ardubugs:rover
+  file: base/Dockerfile
+  context: base
+  depends-on: squareslab/ardubugs:base
