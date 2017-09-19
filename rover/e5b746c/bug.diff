@@ -1,0 +1,103 @@
+diff --git a/APMrover2/AP_MotorsUGV.cpp b/APMrover2/AP_MotorsUGV.cpp
+index b839d2a..973a125 100644
+--- a/APMrover2/AP_MotorsUGV.cpp
++++ b/APMrover2/AP_MotorsUGV.cpp
+@@ -318,34 +318,34 @@ void AP_MotorsUGV::setup_safety_output()
+ bool AP_MotorsUGV::output_test_pct(motor_test_order motor_seq, float pct)
+ {
+     // check if the motor_seq is valid
+-    if (motor_seq > MOTOR_TEST_THROTTLE_RIGHT) {
++    if (motor_seq > THROTTLE_RIGHT) {
+         return false;
+     }
+     pct = constrain_float(pct, -100.0f, 100.0f);
+ 
+     switch (motor_seq) {
+-        case MOTOR_TEST_THROTTLE: {
++        case THROTTLE: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_throttle)) {
+                 return false;
+             }
+             output_throttle(SRV_Channel::k_throttle, pct);
+             break;
+         }
+-        case MOTOR_TEST_STEERING: {
++        case STEERING: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_steering)) {
+                 return false;
+             }
+             SRV_Channels::set_output_scaled(SRV_Channel::k_steering, pct * 45.0f);
+             break;
+         }
+-        case MOTOR_TEST_THROTTLE_LEFT: {
++        case THROTTLE_LEFT: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_throttleLeft)) {
+                 return false;
+             }
+             output_throttle(SRV_Channel::k_throttleLeft, pct);
+             break;
+         }
+-        case MOTOR_TEST_THROTTLE_RIGHT: {
++        case THROTTLE_RIGHT: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_throttleRight)) {
+                 return false;
+             }
+@@ -366,32 +366,32 @@ bool AP_MotorsUGV::output_test_pct(motor_test_order motor_seq, float pct)
+ bool AP_MotorsUGV::output_test_pwm(motor_test_order motor_seq, float pwm)
+ {
+     // check if the motor_seq is valid
+-    if (motor_seq > MOTOR_TEST_THROTTLE_RIGHT) {
++    if (motor_seq > THROTTLE_RIGHT) {
+         return false;
+     }
+     switch (motor_seq) {
+-        case MOTOR_TEST_THROTTLE: {
++        case THROTTLE: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_throttle)) {
+                 return false;
+             }
+             SRV_Channels::set_output_pwm(SRV_Channel::k_throttle, pwm);
+             break;
+         }
+-        case MOTOR_TEST_STEERING: {
++        case STEERING: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_steering)) {
+                 return false;
+             }
+             SRV_Channels::set_output_pwm(SRV_Channel::k_steering, pwm);
+             break;
+         }
+-        case MOTOR_TEST_THROTTLE_LEFT: {
++        case THROTTLE_LEFT: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_throttleLeft)) {
+                 return false;
+             }
+             SRV_Channels::set_output_pwm(SRV_Channel::k_throttleLeft, pwm);
+             break;
+         }
+-        case MOTOR_TEST_THROTTLE_RIGHT: {
++        case THROTTLE_RIGHT: {
+             if (!SRV_Channels::function_assigned(SRV_Channel::k_throttleRight)) {
+                 return false;
+             }
+diff --git a/APMrover2/AP_MotorsUGV.h b/APMrover2/AP_MotorsUGV.h
+index 42873f1..9f7af6b 100644
+--- a/APMrover2/AP_MotorsUGV.h
++++ b/APMrover2/AP_MotorsUGV.h
+@@ -19,11 +19,11 @@ public:
+      };
+ 
+     enum motor_test_order {
+-        MOTOR_TEST_THROTTLE = 1,
+-        MOTOR_TEST_STEERING = 2,
+-        MOTOR_TEST_THROTTLE_LEFT = 3,
+-        MOTOR_TEST_THROTTLE_RIGHT = 4,
+-    };
++        THROTTLE = 0,
++        STEERING = 1,
++        THROTTLE_LEFT = 2,
++        THROTTLE_RIGHT = 3,
++     };
+ 
+     // initialise motors
+     void init();
