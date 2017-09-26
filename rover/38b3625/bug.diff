@@ -1,0 +1,13 @@
+diff --git a/libraries/AP_NavEKF2/AP_NavEKF2_core.cpp b/libraries/AP_NavEKF2/AP_NavEKF2_core.cpp
+index 83f7d34..5b90be6 100644
+--- a/libraries/AP_NavEKF2/AP_NavEKF2_core.cpp
++++ b/libraries/AP_NavEKF2/AP_NavEKF2_core.cpp
+@@ -365,7 +365,7 @@ bool NavEKF2_core::InitialiseFilterBootstrap(void)
+         pitch = asinf(initAccVec.x);
+ 
+         // calculate initial roll angle
+-        roll = atan2f(-initAccVec.y , -initAccVec.z);
++        roll = -asinf(initAccVec.y / cosf(pitch));
+     }
+ 
+     // calculate initial roll and pitch orientation
