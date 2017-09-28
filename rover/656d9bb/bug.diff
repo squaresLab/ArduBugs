@@ -1,0 +1,34 @@
+diff --git a/libraries/AP_NavEKF2/AP_NavEKF2.cpp b/libraries/AP_NavEKF2/AP_NavEKF2.cpp
+index 9f7f461..5ba5499 100644
+--- a/libraries/AP_NavEKF2/AP_NavEKF2.cpp
++++ b/libraries/AP_NavEKF2/AP_NavEKF2.cpp
+@@ -1273,24 +1273,18 @@ uint32_t NavEKF2::getLastYawResetAngle(float &yawAngDelta)
+         return 0;
+     }
+ 
+-    yawAngDelta = 0.0f;
+-
+-    // Do the conversion to msec in one place
+-    uint32_t now_time_ms = imuSampleTime_us / 1000;
+-
+-    // The last time we switched to the current primary core is the first reset event
+-    uint32_t lastYawReset_ms = yaw_reset_data.last_primary_change;
++    yaw_reset_data.last_function_call = imuSampleTime_us / 1000;
++    yawAngDelta = 0;
++    uint32_t lastYawReset_ms = 0;
+ 
+     // There has been a change notification in the primary core that the controller has not consumed
+     // or this is a repeated acce
+-    if (yaw_reset_data.core_changed || yaw_reset_data.last_function_call == now_time_ms) {
++    if (yaw_reset_data.core_changed) {
+         yawAngDelta = yaw_reset_data.core_delta;
++        lastYawReset_ms = yaw_reset_data.last_primary_change;
+         yaw_reset_data.core_changed = false;
+     }
+ 
+-    // Record last time controller got the yaw reset
+-    yaw_reset_data.last_function_call = now_time_ms;
+-
+     // There has been a reset inside the core since we switched so update the time and delta
+     float temp_yawAng;
+     uint32_t lastCoreYawReset_ms = core[primary].getLastYawResetAngle(temp_yawAng);

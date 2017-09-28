@@ -1,0 +1,12 @@
+diff --git a/libraries/SITL/SIM_Rover.cpp b/libraries/SITL/SIM_Rover.cpp
+index b7c6ed0..652c88f 100644
+--- a/libraries/SITL/SIM_Rover.cpp
++++ b/libraries/SITL/SIM_Rover.cpp
+@@ -148,6 +148,7 @@ void SimRover::update(const struct sitl_input &input)
+ 
+     // new position vector
+     position += velocity_ef * delta_time;
++    position.z = -home.alt*0.01f;
+ 
+     // update lat/lon/altitude
+     update_position();

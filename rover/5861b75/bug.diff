@@ -1,0 +1,13 @@
+diff --git a/libraries/SITL/SIM_Rover.cpp b/libraries/SITL/SIM_Rover.cpp
+index b7c6ed0..2943733 100644
+--- a/libraries/SITL/SIM_Rover.cpp
++++ b/libraries/SITL/SIM_Rover.cpp
+@@ -53,7 +53,7 @@ float SimRover::turn_circle(float steering)
+     if (fabsf(steering) < 1.0e-6) {
+         return 0;
+     }
+-    return turning_circle * sinf(radians(max_wheel_turn)) / sinf(radians(steering*max_wheel_turn));
++    return turning_circle * sinf(radians(35)) / sinf(radians(steering*35));
+ }
+ 
+ /*

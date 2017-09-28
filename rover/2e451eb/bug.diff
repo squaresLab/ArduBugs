@@ -1,0 +1,13 @@
+diff --git a/APMrover2/motor_test.cpp b/APMrover2/motor_test.cpp
+index e389c23..764afc2 100644
+--- a/APMrover2/motor_test.cpp
++++ b/APMrover2/motor_test.cpp
+@@ -41,7 +41,7 @@ void Rover::motor_test_output()
+ 
+             case MOTOR_TEST_THROTTLE_PILOT:
+                 if ((AP_MotorsUGV::motor_test_order)motor_test_seq == AP_MotorsUGV::MOTOR_TEST_STEERING) {
+-                    test_result = g2.motors.output_test_pct((AP_MotorsUGV::motor_test_order)motor_test_seq, channel_steer->norm_input_dz() * 100.0f);
++                    test_result = g2.motors.output_test_pct((AP_MotorsUGV::motor_test_order)motor_test_seq, channel_steer->get_control_in());
+                 } else {
+                     test_result = g2.motors.output_test_pct((AP_MotorsUGV::motor_test_order)motor_test_seq, channel_throttle->get_control_in());
+                 }
