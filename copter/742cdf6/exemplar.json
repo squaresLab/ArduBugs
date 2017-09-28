@@ -7,20 +7,25 @@
     }
   },
   "mission": {
-    "environment": {},
+    "environment": {"constants": {}},
     "initialState": {
-      "homeLatitude": -35.3632607,
-      "homeLongitude": 149.1652351,
-      "latitude": -35.3632607,
-      "longitude": 149.1652351,
-      "altitude": 0.0,
-      "battery": 100,
-      "armed": false,
-      "armable": true,
-      "mode": "AUTO"
+      "variables": {
+        "homeLatitude": -35.3632607,
+        "homeLongitude": 149.1652351,
+        "latitude": -35.3632607,
+        "longitude": 149.1652351,
+        "altitude": 0.0,
+        "battery": 100,
+        "armed": false,
+        "armable": true,
+        "mode": "AUTO"
+      }
     },
     "actions": [
-    
+      {"kind": "arm", "parameters": {"arm": true}},
+      {"kind": "arm", "parameters": {"arm": true}},
+      {"kind": "arm", "parameters": {"arm": false}},
+      {"kind": "arm", "parameters": {"arm": true}}
     ]
   }
 }
