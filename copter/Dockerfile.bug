@@ -2,6 +2,6 @@ FROM squareslab/ardubugs:copter
 
 ARG bug_revision
 RUN cd source && \
-    git checkout "${bug_revision}" && \
+    git reset --hard "${bug_revision}" && \
     ./waf configure && \
     ./waf build -j$(nproc)
