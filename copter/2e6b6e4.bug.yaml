@@ -1,16 +1,16 @@
-bug: d7ba808
+bug: 2e6b6e4
 compilation:
   command: ./waf build -j$(nproc)
   context: /experiment/source
 dataset: ardubugs
 docker:
   build-arguments:
-    bug_revision: d7ba808~1
-    fix_revision: d7ba808
-  context: d7ba808
+    bug_revision: 2e6b6e4~1
+    fix_revision: 2e6b6e4
+  context: 2e6b6e4
   depends-on: squareslab/ardubugs:copter
   file: Dockerfile.bug
-  tag: squareslab/ardubugs:d7ba808
+  tag: squareslab/ardubugs:2e6b6e4
 program: copter
 test-harness:
   command: python test-harness.py __ID__

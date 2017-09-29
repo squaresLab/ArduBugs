@@ -4,6 +4,9 @@ compilation:
   context: /experiment/source
 dataset: ardubugs
 docker:
+  build-arguments:
+    bug_revision: 1a25087~1
+    fix_revision: 1a25087
   context: 1a25087
   depends-on: squareslab/ardubugs:copter
   file: Dockerfile.bug
