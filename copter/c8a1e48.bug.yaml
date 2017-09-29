@@ -7,7 +7,6 @@ docker:
   build-arguments:
     bug_revision: c8a1e48~1
     fix_revision: c8a1e48
-  context: c8a1e48
   depends-on: squareslab/ardubugs:copter
   file: Dockerfile.bug
   tag: squareslab/ardubugs:c8a1e48
