@@ -1,9 +1,7 @@
 FROM squareslab/ardubugs:copter
 
-ADD . bugFiles
-RUN sudo chown -R $USER:$USER bugFiles && \
-    cp -rp bugFiles/* source/ && \
-    sudo rm -rf bugFiles 
+ARG bug_revision
 RUN cd source && \
+    git checkout "${bug_revision}" && \
     ./waf configure && \
     ./waf build -j$(nproc)
