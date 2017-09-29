@@ -1,7 +1,7 @@
 FROM squareslab/ardubugs:copter
 
 ARG bug_revision
-RUN cd source && \
+RUN cd /experiment/source && \
     git reset --hard "${bug_revision}" && \
     ./waf configure && \
     ./waf build -j$(nproc)
