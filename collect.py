@@ -21,7 +21,8 @@ CATEGORY_MAPPING = {
     'ardcucopter': 'copter',
     'doc': 'docs',
     'documentation': 'docs',
-    'simulator': 'sitl'
+    'simulator': 'sitl',
+    'baro': 'barometer'
 }
 
 # a list of categories that we're not interested in
@@ -37,7 +38,11 @@ DROP_CATEGORIES = [
     'readme',
     'autotest',
     'desktop',
-    'pysim'
+    'pysim',
+    'codestyle',
+    'rpm',
+    'vagrant',
+    'hello'
 ]
 
 REGEX_HIL = re.compile('\bhil\b')
@@ -61,18 +66,19 @@ class Package(Enum):
         Determines the package to which a provided commit (belonging to a given
         category) belongs.
         """
-        # copter bugs
         if category == 'copter':
             return Package.copter
-
-        # rover bugs
+        if category == 'plane':
+            return Package.plane
         if category == 'rover':
             return Package.rover
-
+        if category == 'sub':
+            return Package.sub
         if category == 'sitl':
             return Package.sitl
-
-        if category in ['tools']:
+        if category in ['gcs', 'gcs_mavlink']:
+            return Package.gcs
+        if category in ['tools', 'replay', 'logs', 'loganalyzer', 'menu', 'hil', 'scripts']:
             return Package.tools
 
         return Package.library
@@ -122,7 +128,7 @@ class BugFix(object):
 
 
     def __str__(self) -> str:
-        return "{} <{}, {}>: {}".format(self.hex8, self.package, self.category, self.summary)
+        return "{}: {}".format(self.hex8, self.summary)
 
 
 def contains_any(string: str, substrings: List[str]) -> bool:
@@ -154,9 +160,12 @@ if __name__ == '__main__':
         #       "build", "compile", "hil"
         if REGEX_HIL.match(msg):
             continue
-
-        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example', 'spelling']):
+        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example', 'spelling', 'minor fix', 'line ending', 'documentation', 'coding style', 'indentation', 'whitespace']):
             continue
+
+        # 3.
+
+
 
         # determine the category name
         category = REGEX_CATEGORY.match(c.message)
@@ -189,13 +198,13 @@ if __name__ == '__main__':
         # record the commit as a bug fix
         bugs.append(fix)
     
-    categories = sorted(categories.items(), key=operator.itemgetter(1), reverse=True)
+    # categories = sorted(categories.items(), key=operator.itemgetter(1), reverse=True)
     # pp(categories)
-    # print('# bug fixes: {}'.format(len(bugs)))
-    # for b in bugs:
-    #      print(b)
-
+    print('# bug fixes: {}'.format(len(bugs)))
+    for b in bugs:
+         print(b)
+    print("# bugs: {}".format(len(bugs)))
 
     # Number of bugs in each category
-    package_count = Counter(b.package.name for b in bugs)
-    print(package_count)
+    # package_count = Counter(b.package.name for b in bugs)
+    # print(package_count)
