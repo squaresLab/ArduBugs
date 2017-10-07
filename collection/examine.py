@@ -7,7 +7,7 @@ def is_username_in_use(name):
 
 
 def validate_username(name):
-    return name.isalpha() and name.islower() and 3 <= len(name) <= 12
+    return name.isalpha() and name.islower() and 3 <= len(name) <= 12 and name != 'exit'
 
 
 def login():
@@ -19,6 +19,8 @@ def login():
 def create_user():
     print("\nTo use the tool, you'll need to provide a username.")
     print("Your username must solely consist of lowercase letters, and must be between three and twelve characters long.")
+    print("(Also, I'm afraid your username cannot be \"exit\".)\n")
+
     name = input("What would you like your username to be? ")
     
     if validate_username(name):
@@ -29,7 +31,7 @@ def create_user():
         return name
     else:
         print("\nHmmm. You seem to have provided an invalid username.")
-        print("Let's try this again...\n")
+        print("Let's try this again...")
         return create_user()
 
 
@@ -41,7 +43,7 @@ def get_username():
 
     elif ans in ['y', 'yes']:
         print("Excellent!")
-        print("Sorry, I didn't recognise you; my creator is a rather sub-par programmer, to be frank.\n")
+        print("Sorry, I didn't recognise you -- my creator is a rather sub-par programmer, to be frank.\n")
         return login()
 
     else:
@@ -54,5 +56,10 @@ if __name__ == '__main__':
     print("")
 
     username = get_username()
+    print("\nWelcome back, {}\n".format(username))
 
-    print("\nWelcome back, {}".format(username))
+    print("Go make a cuppa whilst I mine bug-fixing commits from the ArduPilot repository.")
+    bugs = collect.get_bugs()
+
+    print("\nOkay, I'm done. Sorry about the wait.")
+    print("In total, I found {:d} commits that look like possible bug fixes.".format(len(bugs)))
