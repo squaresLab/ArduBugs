@@ -46,6 +46,8 @@ DROP_CATEGORIES = [
 ]
 
 REGEX_HIL = re.compile('\bhil\b')
+REGEX_BUG = re.compile('\bbug\b')
+REGEX_FIX = re.compile('\bfix\b')
 REGEX_CATEGORY = re.compile("^\w+(?=:)")
 
 
@@ -121,7 +123,12 @@ class BugFix(object):
     def description(self) -> str:
         return self.__description
 
+
+    @property
+    def files(self) -> List[str]:
+        return list(self.commit.stats.files.keys())
     
+
     @property
     def summary(self) -> str:
         return self.description.partition('\n')[0]
@@ -161,7 +168,7 @@ if __name__ == '__main__':
         msg = c.message.lower()
 
         # 1. must contain the term "bug" or "fix"
-        if not contains_any(msg, ['bug', 'fix']):
+        if not (REGEX_BUG.match(msg) or REGEX_FIX.match(msg)):
             continue
 
         # 2. must not contain any of the terms:
@@ -210,10 +217,10 @@ if __name__ == '__main__':
     
     # categories = sorted(categories.items(), key=operator.itemgetter(1), reverse=True)
     # pp(categories)
-    print('# bug fixes: {}'.format(len(bugs)))
+    # print('# bug fixes: {}'.format(len(bugs)))
     copter_bugs = [b for b in bugs if b.package == Package.copter]
     for b in copter_bugs:
-         print(b)
+        print("{}: {}".format(b.hex8, b.summary))
     print("# bugs: {}".format(len(bugs)))
 
     # Number of bugs in each category
