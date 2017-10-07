@@ -160,12 +160,13 @@ if __name__ == '__main__':
         #       "build", "compile", "hil"
         if REGEX_HIL.match(msg):
             continue
-        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example', 'spelling', 'minor fix', 'line ending', 'documentation', 'coding style', 'indentation', 'whitespace']):
+        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example', 'spelling', 'minor fix', 'line ending', 'documentation', 'coding style', 'indentation', 'whitespace', 'docs']):
             continue
 
-        # 3.
-
-
+        # 3. must modify at least one source code file
+        files = c.stats.files.keys()
+        if not any(fn.endswith('.cpp') or fn.endswith('.h') or fn.endswith('.pde') for fn in files):
+            continue
 
         # determine the category name
         category = REGEX_CATEGORY.match(c.message)
