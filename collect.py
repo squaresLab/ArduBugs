@@ -160,12 +160,7 @@ if __name__ == '__main__':
         #       "build", "compile", "hil"
         if REGEX_HIL.match(msg):
             continue
-        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example', 'spelling', 'minor fix', 'line ending', 'documentation', 'coding style', 'indentation', 'whitespace', 'docs']):
-            continue
-
-        # 3. must modify at least one source code file
-        files = c.stats.files.keys()
-        if not any(fn.endswith('.cpp') or fn.endswith('.h') or fn.endswith('.pde') for fn in files):
+        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example', 'spelling', 'minor fix', 'line ending', 'documentation', 'coding style', 'indentation', 'whitespace', 'docs', 'formatting']):
             continue
 
         # determine the category name
@@ -186,6 +181,12 @@ if __name__ == '__main__':
         # discard categories that we're not interested in
         if category in DROP_CATEGORIES:
             continue
+
+        # 3. must modify at least one source code file
+        # (NOTE: this is quite expensive, so we leave it till the end)
+        files = c.stats.files.keys()
+        if not any(fn.endswith('.cpp') or fn.endswith('.h') or fn.endswith('.pde') for fn in files):
+            continue
         
         # keep track of the number of commits belonging to each category
         if category not in categories:
@@ -202,7 +203,8 @@ if __name__ == '__main__':
     # categories = sorted(categories.items(), key=operator.itemgetter(1), reverse=True)
     # pp(categories)
     print('# bug fixes: {}'.format(len(bugs)))
-    for b in bugs:
+    copter_bugs = [b for b in bugs if b.package == Package.copter]
+    for b in copter_bugs:
          print(b)
     print("# bugs: {}".format(len(bugs)))
 
