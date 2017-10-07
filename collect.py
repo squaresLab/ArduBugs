@@ -131,6 +131,14 @@ class BugFix(object):
         return "{}: {}".format(self.hex8, self.summary)
 
 
+    def to_csv_row(self) -> List[str]:
+        """
+        Returns a description of this row in the form of a list, ready to
+        be written as a CSV row.
+        """
+        return []
+
+
 def contains_any(string: str, substrings: List[str]) -> bool:
     for substring in substrings:
         if substring in string:
