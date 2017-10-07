@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from typing import List
 from enum import Enum
+from collections import Counter
 from pprint import pprint as pp
 import re
 import git
@@ -49,9 +50,32 @@ class Package(Enum):
     plane = 'plane'
     sub = 'sub'
     gcs = 'gcs'
-    library = 'library'
     sitl = 'sitl'
     tools = 'tools'
+    library = 'library'
+
+
+    @staticmethod
+    def determine(commit: git.Commit, category: str) -> 'Package':
+        """
+        Determines the package to which a provided commit (belonging to a given
+        category) belongs.
+        """
+        # copter bugs
+        if category == 'copter':
+            return Package.copter
+
+        # rover bugs
+        if category == 'rover':
+            return Package.rover
+
+        if category == 'sitl':
+            return Package.sitl
+
+        if category in ['tools']:
+            return Package.tools
+
+        return Package.library
 
 
 class BugFix(object):
@@ -59,6 +83,7 @@ class BugFix(object):
         self.__commit = commit
         self.__category = category
         self.__description = commit.message.partition(':')[2].strip()
+        self.__package = Package.determine(commit, category)
 
     
     @property
@@ -82,13 +107,22 @@ class BugFix(object):
 
 
     @property
+    def package(self) -> Package:
+        return self.__package
+
+
+    @property
     def description(self) -> str:
         return self.__description
 
     
     @property
-    def short_description(self) -> str:
+    def summary(self) -> str:
         return self.description.partition('\n')[0]
+
+
+    def __str__(self) -> str:
+        return "{} <{}, {}>: {}".format(self.hex8, self.package, self.category, self.summary)
 
 
 def contains_any(string: str, substrings: List[str]) -> bool:
@@ -156,7 +190,12 @@ if __name__ == '__main__':
         bugs.append(fix)
     
     categories = sorted(categories.items(), key=operator.itemgetter(1), reverse=True)
-    pp(categories)
-    print('# bug fixes: {}'.format(len(bugs)))
-    for b in bugs:
-         print("{}: {}".format(b.hex8, b.short_description))
+    # pp(categories)
+    # print('# bug fixes: {}'.format(len(bugs)))
+    # for b in bugs:
+    #      print(b)
+
+
+    # Number of bugs in each category
+    package_count = Counter(b.package.name for b in bugs)
+    print(package_count)
