@@ -7,6 +7,7 @@ import re
 import git
 import os
 import operator
+import csv
 from datetime import datetime
 
 
@@ -142,6 +143,9 @@ class BugFix(object):
     def __str__(self) -> str:
         return "{}: {}".format(self.hex8, self.summary)
 
+    
+    csv_row_header = ['sha' ,'hex-8', 'package', 'category', 'summary', 'description', 'files']
+    
 
     def to_csv_row(self) -> List[str]:
         """
@@ -239,6 +243,15 @@ def get_bugs() -> List[BugFix]:
 
 if __name__ == '__main__':
     bugs = get_bugs()
+
+    # write to file
+    with open('bugs.csv', 'w') as f:
+        writer = csv.writer(f, delimiter=';', quotechar='"')
+        writer.writerow(BugFix.csv_row_header)
+        for bug in bugs:
+            writer.writerow(bug.to_csv_row())
+
+
     copter_bugs = [b for b in bugs if b.package == Package.copter]
     rover_bugs = [b for b in bugs if b.package == Package.rover]
     plane_bugs = [b for b in bugs if b.package == Package.plane]
