@@ -153,7 +153,7 @@ def contains_any(string: str, substrings: List[str]) -> bool:
     return False
 
 
-if __name__ == '__main__':
+def get_bugs() -> List[BugFix]:
     if not os.path.exists('ardu'):
         print('cloning repo...')
         git.Repo.clone_from('https://github.com/ArduPilot/ArduPilot.git', 'ardu')
@@ -216,15 +216,13 @@ if __name__ == '__main__':
 
         # record the commit as a bug fix
         bugs.append(fix)
-    
-    # categories = sorted(categories.items(), key=operator.itemgetter(1), reverse=True)
-    # pp(categories)
-    # print('# bug fixes: {}'.format(len(bugs)))
+
+    return bugs
+
+
+if __name__ == '__main__':
+    bugs = get_bugs()
     copter_bugs = [b for b in bugs if b.package == Package.copter]
     for b in copter_bugs:
         print("{}: {}".format(b.hex8, b.summary))
     print("# bugs: {}".format(len(bugs)))
-
-    # Number of bugs in each category
-    # package_count = Counter(b.package.name for b in bugs)
-    # print(package_count)
