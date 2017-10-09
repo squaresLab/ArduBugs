@@ -7,10 +7,15 @@ import re
 import git
 import os
 import operator
+from datetime import datetime
 
 
 # buckets:
 # { copter, rover, plane, sub, gcs, libraries, sitl, tools }
+
+
+# we ignore all commits past this date
+CUTOFF_DATE = datetime(2017, 10, 1)
 
 
 CATEGORY_MAPPING = {
@@ -173,7 +178,10 @@ def get_bugs() -> List[BugFix]:
     for c in commits:
         msg = c.message.lower()
 
-        print(c.committed_date)
+        # commit must occur before October 1st, 2017
+        commit_date = datetime.utcfromtimestamp(c.committed_date)
+        if commit_date >= CUTOFF_DATE:
+            continue
 
         # 0. must not belong to the set of non-bugs
         if str(c) in non_bugs:
