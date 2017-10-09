@@ -1,2 +1,6 @@
+__pycache__
 ardu
 .Dockerfile
+*.pyc
+*.swp
+*.swo
