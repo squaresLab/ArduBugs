@@ -158,6 +158,12 @@ def get_bugs() -> List[BugFix]:
         print('cloning repo...')
         git.Repo.clone_from('https://github.com/ArduPilot/ArduPilot.git', 'ardu')
 
+    if os.path.exists('non-bugs.txt'):
+        with open('non-bugs.txt', 'r') as f:
+            non_bugs = set(rev.partition(',')[0] for rev in f)
+    else:
+        non_bugs = set()
+
     repo = git.Repo('ardu')
     commits = list(repo.iter_commits())
     print("# commits: {}".format(len(commits)))
@@ -166,6 +172,10 @@ def get_bugs() -> List[BugFix]:
     categories = {}
     for c in commits:
         msg = c.message.lower()
+
+        # 0. must not belong to the set of non-bugs
+        if str(c) in non_bugs:
+            continue
 
         # 1. must contain the term "bug" or "fix"
         if not (REGEX_BUG.search(msg) or REGEX_FIX.search(msg)):
