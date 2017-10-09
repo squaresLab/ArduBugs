@@ -152,7 +152,9 @@ class BugFix(object):
         Returns a description of this row in the form of a list, ready to
         be written as a CSV row.
         """
-        return []
+        summary = self.summary.replace(';', '^^')
+        desc = self.description.replace(';', '^^')
+        return [self.id, self.hex8, self.package, self.category, summary, desc, self.files]
 
 
 def contains_any(string: str, substrings: List[str]) -> bool:
