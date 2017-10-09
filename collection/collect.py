@@ -211,16 +211,10 @@ def get_bugs() -> List[BugFix]:
 
         # 3. must modify at least one source code file
         # (NOTE: this is quite expensive, so we leave it till the end)
-        # files = c.stats.files.keys()
-        # if not any(fn.endswith('.cpp') or fn.endswith('.h') or fn.endswith('.pde') for fn in files):
-        #     continue
+        files = c.stats.files.keys()
+        if not any(fn.endswith('.cpp') or fn.endswith('.h') or fn.endswith('.pde') for fn in files):
+            continue
         
-        # keep track of the number of commits belonging to each category
-        if category not in categories:
-            categories[category] = 1
-        else:
-            categories[category] += 1
-
         # construct a bug fix object
         fix = BugFix(c, category)
 
