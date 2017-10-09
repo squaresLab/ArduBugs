@@ -1,0 +1,47 @@
+e3af0c79201ff84b8b0aa687f388fdd5fb8c11d8, ct, semantically equivalent
+43fa9c8ae3dc37c47be61ceec3affd172baa15a7, ct, documentation
+f7a00b911e1d027d0e4999ce39079189300cac97, ct, cosmetic
+44a436642b3c6f84ce4e8bd430d46d2a444c11f0, ct, cosmetic
+356a405e2df3b49aebe7260291d3563846788917, ct, cosmetic
+ca8ae06bba85f39e4d9b1b464395100204299b60, ct, cosmetic
+353202e03c29d7a6d99f38b379242a91046db43c, ct, documentation
+e8c5612587e26d44993c5e6bc1331fd25c7931cf, ct, documentation
+627e3faf41e8f2daf450056e49ed04c1fed6699f, ct, documentation
+8033e0c31575c9f56b75cefafa8be7be28a907ea, ct, compilation
+990d5fd0e580b008483eab231fe8a0cbf753a2f8, ct, compilation
+1a1c74950138ca0ad89fb06fc4bbfb53f79a50b7, ct, compilation
+c581a702a027d75d284d0a65334db44ec3b9de18, ct, documentation
+c324d4e89b7464f298f4ce304213478d4238ac84, ct, documentation
+c8ecb1bac7de37688b6551e3418b8d6b1dd22051, ct, documentation
+8adc60751c5f7c8b623afd4eab16eac742a5586a, ct, documentation
+19332be52ebc50f37d493820d7cfa56071b9b694, ct, compilation: api change
+d26fa6d8278e1a09b1e5a7a90cd6bef0316ddd33, ct, cosmetic
+acdf4a226f000f74b50cfa480e0994a69521ae1b, ct, compilation: api change
+d745060c802771501c69f84b0583e5fe6ece1fc6, ct, documentation: parameter
+b9845047f4ed44326ef3b2ebf6fd9f8c4c8e0997, ct, documentation: parameter
+49367c5a301c289eb606e3326f8f7d178bf384a7, ct, compilation: bad include
+a6078cd281998acc941803a27b93698215203826, ct, documentation: parameter
+c32d77c62607784ae97311016f36c22aaff0df1e, ct, documentation: parameter
+b47cd6d5be112c585de71c6e004e4e6859d3d7a3, ct, documentation: parameter
+c4f11e6c742d8c19779db85fefe517eec0de5987, ct, compilation: api change
+62f3eed4e0d31d07c252600d7ce234a29589ab50, ct, documentation: parameter description
+6da68c53a584ede158981d2f5075a973e641cf46, ct, optimisation: unnecessary memory usage
+901c692ee38812058076eb67cdade9df49b4473c, ct, compilation: wrong type
+a2a3eed0633082d9bec7e4b55f9a2a0d31cc43dc, ct, hardware-specific: APM1
+d011783d76a14e3da2298e6dd2f7bf4174001df4, ct, documentation: parameter
+377a74706536407954303b88c491ecf4c724d692, ct, cosmetic
+ce241dd97a8628743a4f285deecc0e071b79f190, ct, cosmetic
+6f200fa9231f9a90ab3ebbb79382229b2ab80e77, ct, cosmetic: major refactoring
+874fae931fb727b00679376e4d4959ec957cde04, ct, compilation: api change
+a6b6fb24737aca769ef5f888ec9bfb24198e050e, ct, documentation: parameter
+15e673f5ae4b4caa31ac5572f6e829aeaeffdc2a, ct, documentation: parameter
+d6b244670bd3cb3601d3aa132ac343a11ea0663a, ct, compilation: api change
+64ce1e0381de588e4e2f899103b78d5a7e8d6f38, ct, compilation: api change
+5a36b9955e80bdbfa3f7861d6a10a2144a5d2dbe, ct, compilation
+da629ce97697350aabb60145fa78651568a80595, ct, cosmetic
+85b0a18f610dc29c4cf960b16005f682d12c203a, ct, documentation: parameter
+bfd24801ea057922279d95e035b0572c366d28f7, ct, documentation: parameter
+02d0b059269d761bff78cf50ccbde8ac62e76a52, ct, cosmetic
+e22130cbc765f9b046e72e5379677a077d143c3b, ct, cosmetic
+4d284a695dc2604cdf02d29338b921eb1fa57cd1, ct, compilation: api change
+
