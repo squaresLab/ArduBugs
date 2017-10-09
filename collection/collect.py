@@ -45,9 +45,9 @@ DROP_CATEGORIES = [
     'hello'
 ]
 
-REGEX_HIL = re.compile('\bhil\b')
-REGEX_BUG = re.compile('\bbug\b')
-REGEX_FIX = re.compile('\bfix\b')
+REGEX_HIL = re.compile('\\bhil\\b')
+REGEX_BUG = re.compile('\\bbug\\b')
+REGEX_FIX = re.compile('\\bfix\\b')
 REGEX_CATEGORY = re.compile("^\w+(?=:)")
 
 
@@ -168,14 +168,16 @@ if __name__ == '__main__':
         msg = c.message.lower()
 
         # 1. must contain the term "bug" or "fix"
-        if not (REGEX_BUG.match(msg) or REGEX_FIX.match(msg)):
+        if not (REGEX_BUG.search(msg) or REGEX_FIX.search(msg)):
             continue
 
         # 2. must not contain any of the terms:
         #       "build", "compile", "hil"
-        if REGEX_HIL.match(msg):
+        if REGEX_HIL.search(msg):
             continue
-        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example', 'spelling', 'minor fix', 'line ending', 'documentation', 'coding style', 'indentation', 'whitespace', 'docs', 'formatting']):
+        if contains_any(msg, ['build', 'compile', 'comment', 'indent-tabs-mode', 'fix example',
+                              'spelling', 'minor fix', 'line ending', 'documentation',
+                              'coding style', 'indentation', 'whitespace', 'docs', 'formatting']):
             continue
 
         # determine the category name
@@ -199,9 +201,9 @@ if __name__ == '__main__':
 
         # 3. must modify at least one source code file
         # (NOTE: this is quite expensive, so we leave it till the end)
-        files = c.stats.files.keys()
-        if not any(fn.endswith('.cpp') or fn.endswith('.h') or fn.endswith('.pde') for fn in files):
-            continue
+        # files = c.stats.files.keys()
+        # if not any(fn.endswith('.cpp') or fn.endswith('.h') or fn.endswith('.pde') for fn in files):
+        #     continue
         
         # keep track of the number of commits belonging to each category
         if category not in categories:
