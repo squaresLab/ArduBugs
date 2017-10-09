@@ -173,6 +173,8 @@ def get_bugs() -> List[BugFix]:
     for c in commits:
         msg = c.message.lower()
 
+        print(c.committed_date)
+
         # 0. must not belong to the set of non-bugs
         if str(c) in non_bugs:
             continue
@@ -218,6 +220,9 @@ def get_bugs() -> List[BugFix]:
         # construct a bug fix object
         fix = BugFix(c, category)
 
+        # drop bug fixes that belong to packages that we don't care about
+        
+
         # record the commit as a bug fix
         bugs.append(fix)
 
@@ -227,6 +232,15 @@ def get_bugs() -> List[BugFix]:
 if __name__ == '__main__':
     bugs = get_bugs()
     copter_bugs = [b for b in bugs if b.package == Package.copter]
+    rover_bugs = [b for b in bugs if b.package == Package.rover]
+    plane_bugs = [b for b in bugs if b.package == Package.plane]
+    library_bugs = [b for b in bugs if b.package == Package.library]
+
     for b in copter_bugs:
         print("{}: {}".format(b.hex8, b.summary))
+
     print("# bugs: {}".format(len(bugs)))
+    print("# copter bugs: {}".format(len(copter_bugs)))
+    print("# rover bugs: {}".format(len(rover_bugs)))
+    print("# plane bugs: {}".format(len(plane_bugs)))
+    print("# library bugs: {}".format(len(library_bugs)))
