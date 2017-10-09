@@ -102,9 +102,9 @@ RUN git clone https://github.com/dronekit/dronekit-sitl.git /experiment/dronekit
     sudo python setup.py install
 
 # compile ArduPilot
-RUN cd "${ARDUPILOT_LOCATION}" && \
-    ./waf configure && \
-    ./waf build -j$(nproc)
+# RUN cd "${ARDUPILOT_LOCATION}" && \
+#     ./waf configure && \
+#     ./waf build -j$(nproc)
 
 ADD tester.py /experiment/source/Tools/autotest/tester.py
 RUN sudo chown -R $(whoami):$(whoami) source
@@ -112,3 +112,7 @@ RUN sudo chown -R $(whoami):$(whoami) source
 # fixes indefinite timeout in default test harness
 RUN sudo pip uninstall -y pymavlink && \
     sudo pip install pymavlink
+
+RUN sudo add-apt-repository ppa:jonathonf/python-3.5 && \
+    sudo apt-get update && \
+    sudo apt-get install -y python-3.5

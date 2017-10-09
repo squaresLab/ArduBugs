@@ -3,5 +3,5 @@ FROM squareslab/ardubugs:copter
 ARG bug_revision
 RUN cd /experiment/source && \
     git reset --hard "${bug_revision}" && \
-    ./waf configure && \
-    ./waf build -j$(nproc)
+    cd Tools/autotest && \
+    ./autotest.py -j$(nproc) build.ArduCopter
