@@ -4,4 +4,4 @@ ARG bug_revision
 RUN cd /experiment/source && \
     git reset --hard "${bug_revision}" && \
     cd Tools/autotest && \
-    ./autotest.py -j$(nproc) build.ArduCopter
+    ./autotest.py $(nproc) build.ArduCopter
