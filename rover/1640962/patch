@@ -1,0 +1,4 @@
+148c148
+<         yaw_rate_earth = wrap_180(180 + yaw_rate_earth);
+---
+>         yaw_rate_earth *= -1.0f;

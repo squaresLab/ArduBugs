@@ -133,6 +133,16 @@ class BugFix(object):
     @property
     def files(self) -> List[str]:
         return list(self.commit.stats.files.keys())
+
+
+    @property
+    def num_files(self) -> int:
+        return len(self.files)
+
+
+    @property
+    def num_lines(self) -> int:
+        return self.commit.stats.total['lines']
     
 
     @property
@@ -144,7 +154,7 @@ class BugFix(object):
         return "{}: {}".format(self.hex8, self.summary)
 
     
-    csv_row_header = ['sha' ,'hex-8', 'package', 'category', 'summary', 'description', 'files']
+    csv_row_header = ['sha' ,'hex-8', 'package', 'category', 'summary', 'description', 'files', 'num. files','num. lines changed']
     
 
     def to_csv_row(self) -> List[str]:
@@ -155,7 +165,8 @@ class BugFix(object):
         package = self.package.name
         summary = self.summary.replace(';', '^^')
         desc = self.description.replace(';', '^^')
-        return [self.id, self.hex8, package, self.category, summary, desc, self.files]
+        return [self.id, self.hex8, package, self.category, summary,
+                desc, self.files, self.num_files, self.num_lines]
 
 
 def contains_any(string: str, substrings: List[str]) -> bool:
