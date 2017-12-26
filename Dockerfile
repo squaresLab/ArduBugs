@@ -31,7 +31,7 @@ RUN sudo apt-get update && \
                                                     libncurses5-dev && \
     sudo apt-get autoremove -y && \
     sudo apt-get clean && \
-    sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*  
+    sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN sudo apt-get update && \
     sudo apt-get install -y libtool \
@@ -54,7 +54,7 @@ RUN sudo apt-get update && \
                             flightgear \
                             python-pexpect \
 			                      bash && \
-    sudo pip install future MAVProxy && \ 
+    sudo pip install future MAVProxy && \
     sudo pip install --upgrade pexpect && \
     sudo apt-get clean && \
     sudo rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
@@ -113,7 +113,7 @@ RUN sudo chown -R $(whoami):$(whoami) source
 RUN sudo pip uninstall -y pymavlink && \
     sudo pip install pymavlink
 
-# install Python 3.5
-RUN sudo add-apt-repository ppa:jonathonf/python-3.5 && \
+# install Python 3.6
+RUN sudo add-apt-repository ppa:jonathonf/python-3.6 && \
     sudo apt-get update && \
-    sudo apt-get install -y python-3.5
+    sudo apt-get install -y python-3.6
