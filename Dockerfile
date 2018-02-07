@@ -91,8 +91,8 @@ RUN sudo pip install  future \
 
 ENV ARDUPILOT_LOCATION "/experiment/source"
 
-ADD default.parm /experiment/
-ADD default_eeprom.bin /experiment/
+ADD base/default.parm /experiment/
+ADD base/default_eeprom.bin /experiment/
 RUN cp /experiment/default_eeprom.bin /experiment/eeprom.bin
 
 # install dronekit SITL
@@ -106,7 +106,6 @@ RUN git clone https://github.com/dronekit/dronekit-sitl.git /experiment/dronekit
 #     ./waf configure && \
 #     ./waf build -j$(nproc)
 
-ADD tester.py /experiment/source/Tools/autotest/tester.py
 RUN sudo chown -R $(whoami):$(whoami) source
 
 # fixes indefinite timeout in default test harness
