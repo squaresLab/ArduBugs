@@ -1,4 +1,4 @@
-FROM squareslab/ardubugs:rover
+FROM squareslab/ardubugs:base
 
 ARG rev_fix
 
