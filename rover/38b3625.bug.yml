@@ -1,10 +1,10 @@
-bug: 1455f8c
+bug: 38b3625
 build:
   arguments:
-    rev_fix: 1455f8c
+    rev_fix: 38b3625
   depends-on: squareslab/ardubugs:rover
   file: Dockerfile.bug
-  tag: squareslab/ardubugs:1455f8c
+  tag: squareslab/ardubugs:38b3625
   type: docker
 compiler:
   time-limit: 120
