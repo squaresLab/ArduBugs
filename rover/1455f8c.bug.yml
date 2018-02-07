@@ -4,7 +4,7 @@ program: ardurover
 dataset: ardubugs
 
 languages:
-  - c++
+  - cpp
 source-location: /experiment/source
 
 build:
