@@ -113,7 +113,9 @@ RUN sudo chown -R $(whoami):$(whoami) source
 RUN sudo pip uninstall -y pymavlink && \
     sudo pip install pymavlink
 
-# install Python 3.6
-RUN sudo add-apt-repository ppa:jonathonf/python-3.6 && \
-    sudo apt-get update && \
-    sudo apt-get install -y python-3.6
+# install Python 3
+RUN sudo apt-get update && \
+    sudo apt-get install -y python3
+# RUN sudo add-apt-repository ppa:jonathonf/python-3.6 && \
+#     sudo apt-get update && \
+#     sudo apt-get install -y python-3.6
