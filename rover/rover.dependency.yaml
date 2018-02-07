@@ -1,3 +1,4 @@
+version: '1.0'
 docker:
   tag: squareslab/ardubugs:rover
   file: base/Dockerfile
