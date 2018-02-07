@@ -3,7 +3,8 @@
 ## Installation
 
 ```
-repairbox add-source https://github.com/squaresLab/ArduBugs
-repairbox list-bugs
-repairbox install-bug ardubugs:copter:027552e
+$ pip3 install bugzoo --upgrade
+$ bugzoo source add https://github.com/squaresLab/ArduBugs
+$ bugzoo bug list
+$ bugzoo bug build -f ardubugs:copter:027552e
 ```
