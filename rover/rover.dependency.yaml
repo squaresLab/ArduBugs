@@ -1,6 +1,0 @@
-version: '1.0'
-docker:
-  tag: squareslab/ardubugs:rover
-  file: base/Dockerfile
-  context: base
-  depends-on: squareslab/ardubugs:base
