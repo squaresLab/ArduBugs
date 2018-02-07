@@ -1,0 +1,19 @@
+bug: e843bf3d
+build:
+  arguments:
+    rev_fix: e843bf3d
+  depends-on: squareslab/ardubugs:rover
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e843bf3d
+  type: docker
+compiler:
+  time-limit: 120
+  type: waf
+dataset: ardubugs
+languages:
+- cpp
+program: ardurover
+source-location: /experiment/source
+test-harness:
+  type: empty
+version: '1.0'

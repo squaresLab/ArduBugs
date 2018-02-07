@@ -1,0 +1,19 @@
+bug: cfe6e209
+build:
+  arguments:
+    rev_fix: cfe6e209
+  depends-on: squareslab/ardubugs:rover
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:cfe6e209
+  type: docker
+compiler:
+  time-limit: 120
+  type: waf
+dataset: ardubugs
+languages:
+- cpp
+program: ardurover
+source-location: /experiment/source
+test-harness:
+  type: empty
+version: '1.0'

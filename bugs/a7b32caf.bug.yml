@@ -1,0 +1,19 @@
+bug: a7b32caf
+build:
+  arguments:
+    rev_fix: a7b32caf
+  depends-on: squareslab/ardubugs:rover
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a7b32caf
+  type: docker
+compiler:
+  time-limit: 120
+  type: waf
+dataset: ardubugs
+languages:
+- cpp
+program: ardurover
+source-location: /experiment/source
+test-harness:
+  type: empty
+version: '1.0'
