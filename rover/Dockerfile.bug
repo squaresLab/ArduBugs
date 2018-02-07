@@ -1,0 +1,9 @@
+FROM squareslab/ardubugs:rover
+
+ARG fix-revision
+
+# rollback to the version of the source code immediately prior to the fix revision
+RUN cd /experiment/source && \
+    make clean && \
+    git clean -fd && \
+    git checkout "${fix-revision}"
