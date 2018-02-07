@@ -2,7 +2,7 @@ bug: facd8fc8
 build:
   arguments:
     rev_fix: facd8fc8
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:facd8fc8
   type: docker

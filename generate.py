@@ -20,7 +20,7 @@ def build(fix_revision: str) -> dict:
         'build': {
             'type': 'docker',
             'tag': 'squareslab/ardubugs:{}'.format(fix_revision),
-            'depends-on': 'squareslab/ardubugs:rover',
+            'depends-on': 'squareslab/ardubugs:base',
             'file': 'Dockerfile.bug',
             'arguments': {
                 'rev_fix': fix_revision

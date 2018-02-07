@@ -2,7 +2,7 @@ bug: 802ab79c
 build:
   arguments:
     rev_fix: 802ab79c
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:802ab79c
   type: docker

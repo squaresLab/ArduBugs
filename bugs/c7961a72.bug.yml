@@ -2,7 +2,7 @@ bug: c7961a72
 build:
   arguments:
     rev_fix: c7961a72
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:c7961a72
   type: docker

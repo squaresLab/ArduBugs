@@ -2,7 +2,7 @@ bug: f2c10105
 build:
   arguments:
     rev_fix: f2c10105
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:f2c10105
   type: docker

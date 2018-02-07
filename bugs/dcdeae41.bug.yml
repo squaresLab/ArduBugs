@@ -2,7 +2,7 @@ bug: dcdeae41
 build:
   arguments:
     rev_fix: dcdeae41
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:dcdeae41
   type: docker

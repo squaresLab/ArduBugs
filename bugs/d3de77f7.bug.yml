@@ -2,7 +2,7 @@ bug: d3de77f7
 build:
   arguments:
     rev_fix: d3de77f7
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:d3de77f7
   type: docker

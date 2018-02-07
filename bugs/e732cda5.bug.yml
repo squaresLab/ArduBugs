@@ -2,7 +2,7 @@ bug: e732cda5
 build:
   arguments:
     rev_fix: e732cda5
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:e732cda5
   type: docker

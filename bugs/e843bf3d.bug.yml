@@ -2,7 +2,7 @@ bug: e843bf3d
 build:
   arguments:
     rev_fix: e843bf3d
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:e843bf3d
   type: docker

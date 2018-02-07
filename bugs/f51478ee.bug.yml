@@ -2,7 +2,7 @@ bug: f51478ee
 build:
   arguments:
     rev_fix: f51478ee
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:f51478ee
   type: docker

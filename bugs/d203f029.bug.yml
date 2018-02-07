@@ -2,7 +2,7 @@ bug: d203f029
 build:
   arguments:
     rev_fix: d203f029
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:d203f029
   type: docker

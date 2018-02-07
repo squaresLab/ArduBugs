@@ -2,7 +2,7 @@ bug: ea64438e
 build:
   arguments:
     rev_fix: ea64438e
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:ea64438e
   type: docker

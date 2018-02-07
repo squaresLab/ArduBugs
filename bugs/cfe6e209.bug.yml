@@ -2,7 +2,7 @@ bug: cfe6e209
 build:
   arguments:
     rev_fix: cfe6e209
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:cfe6e209
   type: docker

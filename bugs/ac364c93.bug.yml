@@ -2,7 +2,7 @@ bug: ac364c93
 build:
   arguments:
     rev_fix: ac364c93
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:ac364c93
   type: docker

@@ -2,7 +2,7 @@ bug: f1bedc70
 build:
   arguments:
     rev_fix: f1bedc70
-  depends-on: squareslab/ardubugs:rover
+  depends-on: squareslab/ardubugs:base
   file: Dockerfile.bug
   tag: squareslab/ardubugs:f1bedc70
   type: docker
