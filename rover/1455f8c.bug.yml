@@ -12,7 +12,7 @@ build:
   tag: squareslab/ardubugs:1455f8c
   depends-on: squareslab/ardubugs:rover
   file: Dockerfile.bug
-  arguments:
+  build-arguments:
     rev_fix: '1455f8c'
 
 compiler:
