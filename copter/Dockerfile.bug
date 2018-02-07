@@ -1,8 +1,0 @@
-FROM squareslab/ardubugs:copter
-
-ARG bug_revision
-RUN cd /experiment/source && \
-    git reset --hard "${bug_revision}" && \
-    (cd ArduCopter && make configure) && \
-    cd Tools/autotest && \
-    ./autotest.py build.ArduCopter
