@@ -1,0 +1,22 @@
+version: '1.0'
+bug: '1455f8c'
+program: ardurover
+dataset: ardubugs
+
+languages:
+  - c++
+source-location: /experiment/source
+
+build:
+  type: docker
+  tag: squareslab/ardubugs:1455f8c
+  depends-on: squareslab/ardubugs:rover
+  file: Dockerfile.bug
+  arguments:
+    fix-revision: '1455f8c'
+
+compiler:
+  time-limit: 120
+  type: waf
+test-harness:
+  type: empty
