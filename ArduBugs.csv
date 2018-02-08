@@ -1,0 +1,289 @@
+,"Does the bug require concurrent events? (Y, N)",,"Input type (N/A, CLI, GCS, RC, MI)",,"Configuration (N/A, S, D)",,"When does it occur? (I, R, N, F, T)",,"Is state corrupted? (B, C, L)",,"Environmental factors? (Y, N)",,Hardware needed?,,Detectable (default)
+hex-8,,Comment,,Comment,,Comment,,Comment,,Comment,,Comment,,Comment,
+1a207c91,N,,RC,,N/A,,N,,B,doesn't fly straight,N,,N,,Y
+e2d4182c,N,,N/A,,S,,I,,B,"This fix has to do with converting ""old "" parameters to ""new"" parameters.  I can't tell what ""old"" and ""new"" refer to here.  Something to do with, ""old parameter values to new
+  parameter names.""",N,,N,,N
+c9927e6a,N,,RC,,N/A,,N,,B,incorrect speed,N,,N,,Y
+3d13d984,N,,RC,,N/A,,N,,B,,N,,N,,Y
+2e451eb2,N,,GCS | Mission,,N/A,,I,,B,,N,,N,,Y
+ebeb0923,N,,GCS | Mission | CLI,,N/A,,I | N,,B,,N,,N,,Y
+ba866419,N,,RC,,N/A,,F,,B,,N,,N,,N
+32dc59ba,N,,RC,,S,skid steering,N,,B,,N,,N,,N
+f29951c2,N,,GCS | Mission | RC,,N/A,,T,,B,wrong acc. maximum,N,,N,,Y
+92cdb541,Y,,GCS | RC,,N/A,,N,,B,,N,,N,,N
+87c076da,N,,N/A,,N/A,,N,,B,incorrectly sends message to GCS,Y,could manifest in failure if GCS relies on correctness of landing messages,N,,N
+010665f9,N,,GCS | Mission | RC,,N/A,,I,Calibration,B,Not correctly calibrated,N,,N,,Y
+436d0f8c,N,,RC,,S,"heli, single, coax copters",N,,B,,N,,N,,N
+0e7f1204,N,,N/A,,S & D,,I,,B,,N,,N,,N
+3eeff938,N,,N/A,,N/A,,R,,B,,N,,N,,N
+10b89db4,N,,N/A,,N/A,,R,,B,,N,,N,,N
+c5d17a9d,N,,N/A,,N/A,,R,,B,,N,,N,,N
+af97a397,Y,,GCS | RC,,S,quadplane,N,,B,"This fixes a bug in which, during a mode transition, the vehicle would not have the proper altitude variable and would drop in altitude.",N,,N,,N
+304c9b6e,N,,Mission & RC,,N/A,,N,,B,,N,,N,,Y
+3410db50,N,,N/A,,N/A,,N,,B,,N,,N,,Y
+b31d2a59,N,Does need changing multiple channels though,RC,,S & D,"S: skid steering, D: skid_steer_in=1",N,,B,inappropriately performs mixing when it shouldn't; user should be able to control left and right tracks individually.,N,,N,,N
+742cdf6b,N,,GCS,,N/A,,N,,B,,N,,N,,Y
+378bd84b,N,,Mission,,N/A,,N,,B,,N,,N,,Y
+c846cc24,Y,,GCS | Mission,,S,frame_config=heli_frame,N,,B,,N,,N,,N
+0d1e50b5,N,,N/A,,N/A,,I,,B,This fixes a typo in which one variable (pos_control) was checked for allocability twice and another (wp_nav) not at all.,N,,N,,Y
+1e2e24ee,N,,N/A,,N/A,,N,,B,sets bad throttle,Y,requires human,N,,N
+b5a2bf2c,N,,GCS | Mission | RC,,N/A,,T,,B,This commit changes the circumstances under which a tuning parameter is reverted. This commit stops it from reverting if the paramter hasn't been set.,N,,N,,Y
+70265f91,N,,GCS | Mission | RC,,D,needs to be at least one parameter that isn't represented in EEPROM,T,,C,"sets incorrect, possibly dangerous parameter values",N,,N,,N
+263f6856,Y,EKF failure during landing,GCS | Mission | RC,,N/A,,F,,B,,N,,N,,N
+4e017bf5,N,,GCS | Mission | RC,,S & D,S: quadplane D: Q_GUIDED_MODE=1,N,,B,,N,,N,,N
+cbbc4d67,N,,GCS | Mission | RC,,D,,N,,B,,Y,needs to crash,N,,N
+0051ecb2,N,,GCS | Mission | RC,,N/A,,N,,B,could descend at incorrect velocity (but not always!),N,,N,,Y
+68630a86,N,,N/A,,N/A,,N,,L,,N,,N,,Y
+3349e244,N,,GCS | Mission | RC,,S,autotune enabled,T,,B,Changes to using a more sophisticated unit conversion. I'd imagine the previous unit conversion was sometimes inaccurate.,N,,N,,N
+e732cda5,N,,GCS | Mission | RC,,S & D,terrain data,N,,B,,Y,ground altitude > 0,N,,N
+53f02162,N,,RC,,N/A,,N,,B,"Sets the throttle to 0, rather than another more complicated calculation, when calling relax_alt_hold_constructors",N,,N,,Y
+5061b290,N,,RC,,N/A,,N,,B,"Sets the throttle to 0, rather than another more complicated calculation, when calling relax_alt_hold_constructors (same as 53f02162 but in different location)",N,,N,,Y
+aa466183,N,,RC,,N/A,,N,,B,"Sets the throttle to 0, rather than another more complicated calculation, when calling relax_alt_hold_constructors (same as 53f02162 but in different location)",N,,N,,Y
+5b277f4f,N,,RC | GCS,,N/A,,T,,B,"Sets the throttle to 0, rather than another more complicated calculation, when calling relax_alt_hold_constructors (same as 53f02162 but in different location)",N,,N,,Y
+22422bd7,N,,GCS | Mission | RC,,S,autotune,T,,B,computes incorrect D term,N,,N,,N
+8681911a,N,,GCS | Mission | RC,,S,precision landing,N,,B,,N,,N,,N
+07564aa0,N,,GCS | Mission | RC,,S,quadplane,N,,B,,N,,N,,N
+b9cee76b,N,,GCS | Mission | RC,,S,quadplane,N,,B,,N,,N,,N
+8fb318a6,N,,Mission | GCS,,N/A,,N,,B,,N,,N,,Y
+8ce85516,N,,Mission | GCS,,N/A,,N,,B,flies to wrong location,N,,N,,Y
+a5c55c3f,N,,RC,,N/A,,N,,B,allows takeoff at incorrect throttle,N,,N,,Y
+6bcd9e6f,N,,N/A,,N/A,,I,bad initialisation,B,incorrectly passes arming checks,N,,N,,Y
+4e7e84fc,N,,Mission | GCS | RC,,S,OBC_FAILSAFE,F,transmitter failure,B,,N,,N,,N
+0095f616,N,,GCS | Mission,,N/A,,N,,B,,N,,N,,Y
+a310d373,N,,GCS | Mission,,N/A,,N,,B,,N,,N,,Y
+436062ef,N,,GCS | Mission | RC,,S,bungee,N,,B,,Y,requires human + obstacle,N,,N
+2887e481,N,,Mission | GCS | RC,,N/A,,N,,B,flies off course,N,,N,,Y
+41b584ac,N,,N/A,,S,quadplane,N,,B,,N,,N,,N
+8a6e5ffe,N,,GCS | Mission | RC,,S,quadplane + rangefinder,N,,B,"rangefinder produces a bad (over)correction, possibly leading to an incorrect altitude",N,,N,,N
+f3638f42,N,,GCS | Mission,,N/A,,N,,B,finishes too early,N,,N,,Y
+e2879b37,N,,RC,,N/A,,T,,B,"shouldn't tune, but does so",N,,N,,Y
+7ad623dc,N,,RC,,S,helicopter,N,,B,Removes calls to relax_bf_rate_controller in helicopter Acro and Stabilize.  It's supposed to ensure that servos move.,N,,N,,N
+bbbbd079,N,,GCS | Mission | RC,,S,3D GPS,N,,B,accepts outdated (incorrect) GPS,Y,GPS message must be delayed,N,,N
+f3cbbef4,N,,GCS | Mission,,N/A,,N,,B,should ignore input,N,,N,,Y
+a3c51698,Y,,GCS & Mission,,N/A,,N,requires mission restart,B,fails to unsuppress throttle,N,,N,,N
+be603da5,N,,N/A,,S & D,,N,,B,"incorrectly accepts predicted relative
+  horizontal position during flight",N,,N,,N
+f2c10105,N,,Mission,,N/A,,N,,B,"plane doesn't follow ""desired track""",N,,N,,Y
+103119fe,N,,Mission & RC,,N/A,,N,,B,drives in the wrong direction,N,,N,,Y
+c87929e9,N,,GCS | Mission,Malformed mission,N/A,,N,,C,divide by zero,N,,N,,Y
+224d4500,Y,Change mode while moving,GCS | RC,,N/A,,N,,B,drives in circles,N,,N,,N
+8f0e7e06,N,,GCS | Mission,,N/A,,N,,B,goes to incorrect altitude!,N,,N,,Y
+4b38d444,N,,GCS | Mission | RC,,D,auto throttle mode,N,,B,"results in incorrect
+  flap deflection",N,,N,,N
+6a62b115,N,,Mission,,N/A,,N,next WP must be within loiter radius,B,B,N,,N,,Y
+7935bf70,N,,GCS,rc_override,N/A,,F,,B,"zero-valued RC override should be
+  ignored during failsafe.",N,,N,,N
+0a69c13b,N,,GCS | RC | Mission,,S,helicopter,N,,B,fails to stabilise,N,,N,,N
+4e3d0ae0,N,,N/A,,N/A,,I,,B,trapped in a loop,N,,N,,Y
+2e6b6e47,N,,Mission,,N/A,,N,,B,can fly to wrong WP/home,N,,N,,Y
+f79ac46d,Y,Althold during takeoff,GCS | RC | (GCS & Mission),,N/A,,N,,B,B,N,,N,,N
+21cd73e8,N,,GCS | Mission | RC,,S,autotune enabled,T,,B,saves incorrect value to EEPROM,N,,N,,N
+5644dd86,N,,N/A,,S,IMU logging,N,,L,,N,,N,,N
+7613964e,N,,GCS | Mission,,S,parachute,N,,B,,N,,N,,N
+c8a1e48f,N,,GCS | Mission | RC,,S,helicopter,N,,B,"incorrect checking that the motor is at
+  its lower limit",N,,N,,N
+9ac892ac,N,,GCS & Mission,,N/A,,N,,B,doesn't takeoff,N,,N,,Y
+7056484e,N,,Mission,,D,spline,N,,B,causes incorrect trajectory,N,,N,,N
+a035d5ad,N,,RC,,N/A,,N,,B,"fails to respond to requests to
+  interlock motors",N,,N,,Y
+64629914,N,,GCS | Mission,,S,disabled AC_RALLY,N,,B,incorrect altitude,N,,N,,N
+55d8f440,N,,GCS | RC | MIssion,,S & D, geofencing,N,,B,fence is too low,N,,N,,N
+0f9e50d6,N,,GCS | Mission | RC,,N/A,,N,,B,"incorrectly assumes the copter is within 20cm
+  of reaching the target altitude",Y,home altitude != EKF origin altitude (can be induced by performing an RTL),N,,N
+b344a7ed,N,,GCS | Mission | RC,,N/A,,N,,B,"incorrectly assumes the copter is within 20cm
+  of reaching the target altitude",Y,home altitude != EKF origin altitude (can be induced by performing an RTL),N,,N
+301d4cc4,N,,GCS | Mission | RC,,N/A,,N,,B,goes to wrong altitude,Y,home altitude != EKF origin altitude (can be induced by performing an RTL),N,,N
+11576a0f,N,,GCS | Mission,,N/A,,N,,B,"can accept malformed mavlink
+  set position commands",N,,N,,Y
+2a47337d,N,,GCS | Mission | RC,,N/A,,N,,L,,N,,N,,Y
+8629637c,N,,GCS | Mission | RC,,S,sonar,N,,B,"incorrectly moves to avoid an
+  obstacle that isn't there",Y,obstacle required,N,,N
+da4a36c4,N,,GCS | Mission,,N/A,,N,,B,"incorrectly reports
+  a command as failed to the GCS",N,,N,,Y
+99ca7797,N,,GCS | Mission | RC,,N/A,,N,,B,motors not armed,N,,N,,Y
+4185d179,N,,GCS | Mission | RC,,N/A,,N,,B,,N,,N,,Y
+91bff632,N,,GCS | Mission | RC,,N/A,,N,,B,This looks mostly like a refactoring and renaming of variables. The most substantive change looks like: current_loc.alt becomes pos_control.get_pos_target().z,N,,N,,Y
+44dbf501,N,,N/A,,S,camera,N,,B,sends status when it shouldn't,N,,N,,N
+28b98a17,N,,GCS | Mission | RC,,S,compass,N,,B,unexpectedly lands,Y,requires faulty compass,N,,N
+2dbfc615,N,,GCS,,N/A,,N,,B,"vehicle receives instruction
+intended for another",Y,multiple vehicles,N,,N
+6d3acba0,N,,GCS,,N/A,,N,,B,"vehicle receives instruction
+intended for another",Y,multiple vehicles,N,,N
+1a249a81,N,,GCS,,N/A,,N,,B,"vehicle receives instruction
+intended for another",Y,multiple vehicles,N,,N
+ef0e37b4,N,,GCS | MIssion,,N/A,,N,,B,yaws in incorrect direction,N,,N,,Y
+0a88281a,N,,GCS | Mission,,S,AC_RALLY,N,,B,"climbs before heading to
+rally point; requires invariants",N,,N,,N
+279aff87,N,,GCS | Mission | RC,,N/A,,N,,B,"does not report that the copter
+  landed (when it should do)",N,,N,,Y
+b8f98aba,N,,N/A,,S,barometer,F,baro glitching,L,,Y,glitchy barometer,N,,N
+e9861de2,N,,RC,,N/A,,N,,B,"doesn't react as expected to
+  user inputs",N,,N,,Y
+af282706,N,,N/A,,D,throttle failsafe,F,,B,"failsafe triggered when
+motors are disabled; could be
+unsafe",Y,bad RC signal,N,,N
+f53181ec,N,,RC,,S,,N,,B,"doesn't react as expected to
+  user inputs",N,,N,,N
+e1b7e53c,N,,GCS | Mission,,N/A,,N,,B,moves when it shouldn't!,N,,N,,Y
+8640e117,N,,GCS | Mission | RC,,N/A,,N,,B,moves when it shouldn't,N,,N,,Y
+197d83e3,N,,RC,,N/A,,N,,B,"doesn't react as expected to
+  user inputs",N,,N,,Y
+f51478ee,N,,GCS | Mission,,N/A,,N,,B,"loiters for incorrect
+ number of turns / amount
+ of time",N,,N,,Y
+5b343885,N,,N/A,,S,logging disabled,N,,C,seg. fault (undefined function),N,,N,,N
+ea64438e,N,,GCS | Mission,,N/A,,N,,B,incorrect heading,N,,N,,Y
+08412391,Y,Switch mode during takeoff,(GCS | RC) & Mission,,N/A,,N,,B,throttle stays at maximum; unsafe,N,,N,,N
+817c893f,N,,Mission,,N/A,,N,,B,mission doesn't follow expected branch,N,,N,,Y
+f29ad3a2,N,,Mission,,D,wp_yaw_behaviour,N,,B,,N,,N,,N
+c53a0fcf,N,,Mission,,N/A,,N,,B,,N,,N,,Y
+7dda8afd,N,,GCS | RC | MIssion,,S,DGPS or Assisted GPS,I,,B,copter won't takeoff!,N,,N,,N
+aabcc2bb,N,,RC,,D,failsafe,F,,B,,N,,N,,N
+7d5d0d12,N,,Mission,,D,spline,N,,B,,N,,N,,N
+ac364c93,N,,RC,,S,high update frequency,N,,B,yaw overcorrection,N,,N,,N
+71f61c9b,N,,N/A,,S,autotune,T,,L,,N,,N,,N
+982ce56d,N,,GCS & Mission,,N/A,,N,,B,"fails to resume/restart mission; also
+ fails to stop mission after leaving
+ AUTO",N,,N,,Y
+27969175,N,,Mission,,N/A,,N,,B,"failed to loiter after the end
+ of a mission",N,,N,,Y
+802ab79c,N,,Mission | GCS,,N/A,,N,,B,"fails to change to
+  appropriate flight stage
+  during landing",N,,N,,Y
+bc86a504,N,,Mission,,N/A,,N,,B,"travels to incorrect
+  altitude",N,,N,,Y
+4e1c51aa,N,,Mission,,N/A,,N,,B,"motors are not immediately disarmed at the end of the mission; eventually, they will be, due to default disarming.",N,,N,,Y
+1648ecc6,N,,RC,,S,HELI_FRAME,N,,B,ignores throttle input,N,,N,,N
+c73c9f03,N,,RC,,N/A,,N,,B,ignores throttle input,N,,N,,Y
+e1bf4af1,N,,RC,(stabilise mode),N/A,,N,,B,fails to apply angle boost,N,,N,,Y
+0431b7e1,N,,RC,(stabilise mode),N/A,,N,,B,"fails to update target heading while
+  the copter is landed",N,,N,,Y
+311bba14,N,,RC,,N/A,,N,,B,"believes the copter hasn't
+  landed when its throttle is
+  zero",N,,N,,Y
+4f242aed,N,,GCS | Mission | RC,,D,geofence,N,,B,"control mode does not
+  revert when geo-fence is
+  disabled",N,,N,,N
+fe6ad357,N,,N/A,,S,logging enabled,N,,L,,N,,N,,N
+5cc87729,N,,N/A,,S,logging enabled,N,,L,possible seg. fault,N,,N,,N
+633e91b7,N,,RC,,S,,N,,B,"throttle controller fails to apply
+  tilt compensation",N,,N,,N
+f5b1114a,N,,RC,,N/A,,N,,B,unexpected lean,N,,N,,Y
+f29f7d97,Y,sort of; requires mode change before initialisation has finished,GCS | Mission | RC,,N/A,,N,,B,alt. is higher than expected,N,,N,,N
+2a82d1b0,N,,RC,,N/A,,N,,B,"""If the user is on the ground and flips CH7, do nothing instead of recording a bad takeoff altitude. Do another check to avoid a land right after a takeoff.""",N,,N,,Y
+6f3458eb,N,,GCS,,N/A,,N,,B,next waypoint set incorrectly,N,,N,,Y
+fb49cd82,Y,,RC,,D,,N,,B,"fails to change to correct mode
+  after auxillary switch is depressed",N,,N,,N
+78acea82,N,,GCS | Mission | RC,,S,tricopter,N,,B,"causes wobbling, but reaches destination",N,,N,,N
+5499c6ea,N,,GCS | Mission | RC,,S,autotune enabled,T,,L,,N,,N,,N
+4036f50f,N,,N/A,,N/A,,I,,B,fails to handle old battery parameters,N,,N,,Y
+f13b4546,Y,resume autotune from suspended state,GCS | Mission | RC,,S,autotune enabled,T,,B,,N,,N,,N
+8b79798e,N,,RC,,D,acro_trainer != ACRO_TRAINER_LIMITED,N,,B,unexpected roll behaviour,N,,N,,N
+34b11f7b,N,,RC,,D,max roll angle acro_trainer,N,,B,"roll angle is allowed to exceed
+  max roll angle; could be captured
+  by a system-level invariant",N,,N,,N
+9672742b,N,,RC | GC | Mission,,N/A,,N,,B,"fails to point ahead when
+expected to.",N,,N,,Y
+05248738,N,,Mission | GCS | RC,,N/A,,N,,B,"sets an incorrect and potentially
+  dangerous roll and pitch",Y,needs to land and have non-zero pitch and/or roll,N,,N
+02b64e25,N,,GCS | Mission,,N/A,,N,,B,"fails to descend to target altitude
+  during loiter_turns",N,,N,,Y
+47ab02d6,N,,Mission | GCS,,N/A,,N,,B,"fails to look at ROI for conditional
+ commands",N,,N,,Y
+399970e7,N,,RC,,N/A,,N,,B,,N,,N,,Y
+5a40ee7a,N,,N/A,,S,GPS disabled,N,,B,informs GCS that there are no GPS capabilities until a fix has been acquired,N,,N,,N
+1772a624,N,,N/A,,S,GPS disabled,N,,B,informs GCS that there are no GPS capabilities until a fix has been acquired,N,,N,,N
+ea9ae31a,N,,RC,Requires FBWB mode,N/A,,N,,B,informs GCS that there are no GPS capabilities until a fix has been acquired,N,,N,,Y
+b21bc5a8,N,,N/A,,D,battery monitoring enabled,N,,B,informs GCS that there are no GPS capabilities until a fix has been acquired,N,,N,,N
+24e1f074,N,,GCS | RC | Mission,,S & D,fence checking,N,,B,"attempts to RTL (or land)
+  without a GPS fix; could end up
+  getting even more lost",Y,go beyond fence + have bad GPS fix,N,,N
+facd8fc8,N,,GCS | RC | Mission,,N/A,,N,,B,"fails to compute home distance
+  and bearing; could result in incorrect
+  RTL behaviour ",Y,2D GPS fix,N,,N
+f1bedc70,N,,RC,,N/A,,N,,B,"fails to compute home distance
+  and bearing; could result in incorrect
+  RTL behaviour ",Y,bad GPS fix (no 3D fix),N,,N
+6bac13f9,N,,N/A,,N/A,,N,run-time param changes,B,produces incorrect channel ranges,N,,N,,Y
+9f59f272,Y,RC command during takeoff,(GCS | Mission) & RC,,N/A,,N,,B,reports takeoff as failure,N,,N,,N
+d203f029,N,,Mission,,N/A,,N,,B,,N,,N,,Y
+d10e3bc7,N,,N/A,,N/A,,N,,B,reading from wrong location of memory,N,,N,,Y
+31e3f329,N,,N/A,,N/A,,N,,B,reading from wrong location of memory,N,,N,,Y
+c7961a72,N,,N/A,,N/A,,N,,B,reading from wrong location of memory,N,,N,,Y
+e843bf3d,N,,RC,,N/A,,N,,B,"throttle does react to user inputs
+  as expected",N,,N,,Y
+429f9004,N,,GCS | Mission | RC,,N/A,,N,,B,"nose doesn't point in the
+  expected direction",N,,N,,Y
+1b52ee21,N,,GCS | Mission | RC,,N/A,,N,,B,"nose fails to point towards home if
+initial altitude was above RTL_ALT",N,,N,,Y
+36634265,N,,GCS | Mission | RC,,N/A,,N,,B,plane can fly away!,Y,windy conditions,N,,N
+d65d7d95,N,,GCS | Mission | RC,,N/A,,N,,B,copter descends during takeoff (if in air),N,,N,,Y
+d2bd818b,N,,Mission,,N/A,,N,,B,motors stop; copter doesn't perform mission,N,,N,,Y
+a7b32caf,N,,GCS | Mission | RC,,D,loiter_time_max,N,,B,finishes loitering too early!,N,,N,,N
+a185fa95,N,but it does require doing nothing,GCS | RC,Idle operator,N/A,,N,,B,copter disarms before it should do,N,,N,,Y
+9f0f482d,N,,GCS | Mission,,N/A,,N,,B,,N,,N,,Y
+cdb532a5,N,,GCS | Mission,,N/A,,N,,B,incorrect loiter target,N,,N,,Y
+95d944f6,N,,GCS | Mission,,N/A,,N,,B,"sets incorrect longitude
+ following loiter",N,,N,,Y
+24dd1676,N,,RC,,D,acro_trainer_enabled,N,,B,fails to apply gimbal lock avoidance measures,N,,N,,N
+37040adf,N,,Mission | GCS,,N/A,,N,,B,could induce crash,N,,N,,Y
+476a6d01,N,,"RC
+",,N/A,,N,,B,fails to reduce throttle when inverted,N,,N,,Y
+1007f2ef,N,,GCS,,N/A,,N,,B,stream rate is not updated,N,,N,,Y
+9d3224ef,N,,GCS | Mission | RC,,N/A,,N,,B,,N,,N,,Y
+df1c0d92,N,,RC,,N/A,,N,,B,"incorrect throttle scaling; how can we
+  detect this?",N,,N,,Y
+48135267,N,,RC,,D,autotrim,N,,B,,N,,N,,N
+9c3b9907,N,,GCS | Mission | RC,,S & D,sonar disabled,N,,B,uses sonar when it shouldn't,N,,N,,N
+70371be4,N,,GCS | Mission | RC,,N/A,,N,,B,applies incorrect longitude scaling,Y,need to move towards the poles,N,,N
+ccaa7a52,N,,GCS | Mission | RC,,N/A,,N,,B,(1) should maintain yaw during takeoff (2) RTL acts weirdly when descending,N,,N,,Y
+2dab40ab,N,,GCS | Mission,,N/A,,N,,B,,N,,N,,Y
+08dc730d,N,,GCS | Mission | RC,,N/A,,F,,B,"fails to land if initiated in failsafe
+conditions",N,,N,,N
+16f99ebc,N,,GCS | Mission | RC,,S,logging enabled,F,,L,,N,,N,,N
+576af6d4,N,,GCS | Mission | RC,,N/A,,N,,C,sqrt of negative number,N,,N,,Y
+ff40fa6a,N,,RC,,N/A,,N,,B,,N,,N,,Y
+393c893c,N,,GCS | Mission | RC,,N/A,,N,,B,produces incorrect throttle outputs,N,,N,,Y
+e583ade6,N,,GCS | Mission | RC,,N/A,,N,,B,produces incorrect throttle outputs,N,,N,,Y
+e77b54c7,N,,Mission,,N/A,,N,,B,"goes to next WP without reaching
+  desired altitude for the current WP",N,,N,,Y
+a0151aa6,N,,CLI,,N/A,,N,,C,,N,,N,,Y
+af774256,N,,N/A,,S,optflow enabled,N,,B,fails to use optical flow,N,,N,,N
+d3de77f7,N,,GCS | RC | Mission,,N/A,,N,,B,fails to set servo values,N,,N,,Y
+269e02ee,N,,GCS | RC | Mission,,S,intertial nav,I,,B,corrupted inertial navigation ,N,,N,,N
+5fbe53a8,N,,RC,,N/A,,N,,B,produces incorrect yaw target,N,,N,,Y
+3c9ba94f,N,,GCS | Mission,,S,mount enabled; no specific camera mount,N,,B,fails to track ROI,N,,N,,N
+7cf60e61,N,,GCS | Mission | RC,,N/A,,N,,B,produces incorrect roll target,N,,N,,Y
+889d1bb3,N,,Mission,,N/A,,N,,B,next WP is destroyed after reaching home,N,,N,,Y
+6f32f523,N,,N/A,,S,logging enabled,N,,L,,N,,N,,N
+5d3ddf1f,N,,GCS | Mission,,S,mount enabled; no specific camera mount,N,,B,fails to track ROI,N,,N,,N
+75459b09,N,,RC,,N/A,,N,,B,,N,,N,,Y
+07c7c394,N,,RC,,N/A,,N,,B,incorrectly resets arming counter,N,,N,,Y
+f79b9072,N,,GCS | Mission,,N/A,,N,,B,sets incorrect yaw target,N,,N,,Y
+c091c8e0,N,,RC,,N/A,,N,,B,fails to reset yaw target,N,,N,,Y
+d8ff5dcf,N,,Mission,,N/A,,N,,B,incorrect yaw behaviour in circle mode,N,,N,,Y
+a28070e0,N,,GCS,,N/A,,N,,B,fails to respond to loiter unlimited command,N,,N,,Y
+72d76558,N,,N/A,,D,GPS not enabled,I,,B,constantly waits for GPS,N,,N,,N
+dcdeae41,N,,N/A,,S,logging enabled,N,,L,,N,,N,,N
+2a216ce9,N,,N/A,,S,logging enabled,N,,L,,N,,N,,N
+357d6c2d,N,,GCS | Mission | RC,,S,tricopter,N,,B,,N,,Y,APM hardware,N
+db871cc5,N,,RC,,N/A,,N,,B,,N,,Y,PX4,N
+a3450a95,N,,N/A,,N/A,,I,,B,doesn't notify LED,N,,Y,LEDs,N
+52c4715c,N,,N/A,,S,quadplane,I,,C,should fail setup when on low memory; crashes instead,N,,Y,low memory,N
+cfe6e209,N,,CLI,,N/A,,N,,L,prints wrong info,N,,N,,Y
+d40349d6,N,,CLI,,D,compass,N,,L,prints wrong info,N,,N,,N
+f4e71aff,N,,CLI,,D,compass,N,,L,prints wrong info,N,,N,,N
+a6fd94c6,N,,CLI,,N/A,,I,,L,prints wrong info,N,,N,,Y
+e9b6c764,N,,CLI,,N/A,,I,,L,prints wrong info,N,,N,,Y
+339dac18,N,,N/A,,N/A,,I,,B,yellow blinking lights at wrong location,N,,Y,lights,N
+3831a0ed,N,,CLI,,N/A,,N,,B,infinite loop,N,,N,,Y
+71cbcacf,Y,,RC,,N/A,,I,,B,armed LED is incorrectly lit,N,,Y,LEDs,N
+148fd889,N,,RC,,N/A,,F,,B,incorrectly switches to the wrong mode,N,,Y,X8R receiver,N
+d362bb45,N,,N/A,,S,EPM & SONAR,I,,B,external LED was incorrectly disabled,N,,Y,LEDs,N
+d0fb332e,N,,CLI,,N/A,,N,,B,compass motor compensation cannot be run from mission planner's terminal window,N,,N,,Y
+fdd509a7,N,,CLI,,D,compass,I,,B,"allow cli's compass motor compensation to be run from the
+mission planner's terminal window",N,,N,,N
+fb0f5d46,N,,RC,,N/A,,N,,B,,N,,Y,PX4,N
+a2a3eed0,N,,N/A,,S,CONFIG_APM_HARDWARE,I,,B,telemetry not working on APM1,N,,Y,,N
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,114
