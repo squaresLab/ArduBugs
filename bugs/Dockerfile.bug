@@ -7,3 +7,8 @@ RUN cd /experiment/source && \
     make clean && \
     git clean -fd && \
     git checkout "${rev_fix}~1"
+
+# build
+RUN cd /experiment/source && \
+    ./waf configure && \
+    ./waf build -j$(nproc)

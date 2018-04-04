@@ -1,0 +1,7 @@
+version: '1.0'
+
+blueprints:
+  - type: docker
+    file: Dockerfile
+    tag: squareslab/ardubugs:base
+    context: .
