@@ -1369,18 +1369,6 @@ blueprints:
     depends-on: squareslab/ardubugs:base
     file: Dockerfile.bug
     tag: squareslab/ardubugs:a2a3eed0
-  - type: docker
-    arguments:
-      rev_fix: 
-    depends-on: squareslab/ardubugs:base
-    file: Dockerfile.bug
-    tag: squareslab/ardubugs:
-  - type: docker
-    arguments:
-      rev_fix: 
-    depends-on: squareslab/ardubugs:base
-    file: Dockerfile.bug
-    tag: squareslab/ardubugs:
 
 bugs:
   - name: ardubugs:1a207c91
@@ -5246,40 +5234,6 @@ bugs:
     program: ardupilot
     dataset: ardubugs
     image: squareslab/ardubugs:a2a3eed0
-    source-location: /experiment/source
-    languages:
-    - cpp
-    compiler:
-      type: waf
-      time-limit: 120
-    test-harness:
-      type: empty
-    coverage:
-      files-to-instrument:
-        - APMrover2/APMrover2.cpp
-        - ArduCopter/ArduCopter.cpp
-        - ArduPlane/ArduPlane.cpp
-  - name: ardubugs:
-    program: ardupilot
-    dataset: ardubugs
-    image: squareslab/ardubugs:
-    source-location: /experiment/source
-    languages:
-    - cpp
-    compiler:
-      type: waf
-      time-limit: 120
-    test-harness:
-      type: empty
-    coverage:
-      files-to-instrument:
-        - APMrover2/APMrover2.cpp
-        - ArduCopter/ArduCopter.cpp
-        - ArduPlane/ArduPlane.cpp
-  - name: ardubugs:
-    program: ardupilot
-    dataset: ardubugs
-    image: squareslab/ardubugs:
     source-location: /experiment/source
     languages:
     - cpp
