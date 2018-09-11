@@ -1,14 +1,9 @@
 FROM squareslab/ardubugs:base
-
 ARG rev_fix
-
-# rollback to the version of the source code immediately prior to the fix revision
-RUN cd /experiment/source && \
-    make clean && \
-    git clean -fd && \
-    git checkout "${rev_fix}~1"
-
-# build
-RUN cd /experiment/source && \
-    ./waf configure && \
-    ./waf build -j$(nproc)
+RUN cd /opt/ardupilot \
+ && git clean -fd \
+ && git checkout "${rev_fix}~1" \
+ && git submodule update --init --recursive \
+ && ./waf configure --no-submodule-update \
+ && bear ./waf build -j8 \
+ && sudo chown -R docker /opt
