@@ -13,6 +13,7 @@ USER docker
 
 RUN sudo apt-get update \
  && sudo apt-get install -y --no-install-recommends \
+      gawk \
       python \
       python-pip \
       python-dev \
