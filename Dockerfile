@@ -87,6 +87,8 @@ WORKDIR /opt/ardupilot
 
 ENV PATH "/home/docker/local/bin:${PATH}:/opt/ardupilot/Tools/autotest"
 
+COPY build /opt/ardupilot/build
+
 # remove unnecessary dependencies
 #RUN sudo apt-get remove -y \
 #      libfreetype6-dev \
