@@ -2,9 +2,10 @@
 
 ## Installation
 
+Requires Python 3.5+ and [BugZoo](https://github.com/squaresLab/BugZoo).
+
 ```
-$ pip3 install bugzoo --upgrade
-$ bugzoo source add https://github.com/squaresLab/ArduBugs
+$ bugzoo source add ardubugs https://github.com/squaresLab/ArduBugs
 $ bugzoo bug list
-$ bugzoo bug build -f ardubugs:1a207c91
+$ bugzoo bug build ardubugs:1a207c91
 ```
