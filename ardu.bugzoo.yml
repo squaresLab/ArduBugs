@@ -1,0 +1,6163 @@
+blueprints:
+- context: .
+  file: Dockerfile
+  tag: squareslab/ardubugs:base
+  type: docker
+- arguments:
+    rev_fix: 1a207c91
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:1a207c91
+  type: docker
+- arguments:
+    rev_fix: e2d4182c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e2d4182c
+  type: docker
+- arguments:
+    rev_fix: c9927e6a
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c9927e6a
+  type: docker
+- arguments:
+    rev_fix: 3d13d984
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:3d13d984
+  type: docker
+- arguments:
+    rev_fix: 2e451eb2
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2e451eb2
+  type: docker
+- arguments:
+    rev_fix: ebeb0923
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ebeb0923
+  type: docker
+- arguments:
+    rev_fix: ba866419
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ba866419
+  type: docker
+- arguments:
+    rev_fix: 32dc59ba
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:32dc59ba
+  type: docker
+- arguments:
+    rev_fix: f29951c2
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f29951c2
+  type: docker
+- arguments:
+    rev_fix: 92cdb541
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:92cdb541
+  type: docker
+- arguments:
+    rev_fix: 87c076da
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:87c076da
+  type: docker
+- arguments:
+    rev_fix: 010665f9
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:010665f9
+  type: docker
+- arguments:
+    rev_fix: 436d0f8c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:436d0f8c
+  type: docker
+- arguments:
+    rev_fix: 0e7f1204
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0e7f1204
+  type: docker
+- arguments:
+    rev_fix: 3eeff938
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:3eeff938
+  type: docker
+- arguments:
+    rev_fix: 10b89db4
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:10b89db4
+  type: docker
+- arguments:
+    rev_fix: c5d17a9d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c5d17a9d
+  type: docker
+- arguments:
+    rev_fix: af97a397
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:af97a397
+  type: docker
+- arguments:
+    rev_fix: 304c9b6e
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:304c9b6e
+  type: docker
+- arguments:
+    rev_fix: 3410db50
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:3410db50
+  type: docker
+- arguments:
+    rev_fix: b31d2a59
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:b31d2a59
+  type: docker
+- arguments:
+    rev_fix: 742cdf6b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:742cdf6b
+  type: docker
+- arguments:
+    rev_fix: 378bd84b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:378bd84b
+  type: docker
+- arguments:
+    rev_fix: c846cc24
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c846cc24
+  type: docker
+- arguments:
+    rev_fix: 0d1e50b5
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0d1e50b5
+  type: docker
+- arguments:
+    rev_fix: 1e2e24ee
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:1e2e24ee
+  type: docker
+- arguments:
+    rev_fix: b5a2bf2c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:b5a2bf2c
+  type: docker
+- arguments:
+    rev_fix: 70265f91
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:70265f91
+  type: docker
+- arguments:
+    rev_fix: 263f6856
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:263f6856
+  type: docker
+- arguments:
+    rev_fix: 4e017bf5
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4e017bf5
+  type: docker
+- arguments:
+    rev_fix: cbbc4d67
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:cbbc4d67
+  type: docker
+- arguments:
+    rev_fix: 0051ecb2
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0051ecb2
+  type: docker
+- arguments:
+    rev_fix: 68630a86
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:68630a86
+  type: docker
+- arguments:
+    rev_fix: 3349e244
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:3349e244
+  type: docker
+- arguments:
+    rev_fix: e732cda5
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e732cda5
+  type: docker
+- arguments:
+    rev_fix: 53f02162
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:53f02162
+  type: docker
+- arguments:
+    rev_fix: 5061b290
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5061b290
+  type: docker
+- arguments:
+    rev_fix: aa466183
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:aa466183
+  type: docker
+- arguments:
+    rev_fix: 5b277f4f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5b277f4f
+  type: docker
+- arguments:
+    rev_fix: 22422bd7
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:22422bd7
+  type: docker
+- arguments:
+    rev_fix: 8681911a
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8681911a
+  type: docker
+- arguments:
+    rev_fix: 07564aa0
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:07564aa0
+  type: docker
+- arguments:
+    rev_fix: b9cee76b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:b9cee76b
+  type: docker
+- arguments:
+    rev_fix: 8fb318a6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8fb318a6
+  type: docker
+- arguments:
+    rev_fix: 8ce85516
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8ce85516
+  type: docker
+- arguments:
+    rev_fix: a5c55c3f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a5c55c3f
+  type: docker
+- arguments:
+    rev_fix: 6bcd9e6f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:6bcd9e6f
+  type: docker
+- arguments:
+    rev_fix: 4e7e84fc
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4e7e84fc
+  type: docker
+- arguments:
+    rev_fix: 0095f616
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0095f616
+  type: docker
+- arguments:
+    rev_fix: a310d373
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a310d373
+  type: docker
+- arguments:
+    rev_fix: 436062ef
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:436062ef
+  type: docker
+- arguments:
+    rev_fix: 2887e481
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2887e481
+  type: docker
+- arguments:
+    rev_fix: 41b584ac
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:41b584ac
+  type: docker
+- arguments:
+    rev_fix: 8a6e5ffe
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8a6e5ffe
+  type: docker
+- arguments:
+    rev_fix: f3638f42
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f3638f42
+  type: docker
+- arguments:
+    rev_fix: e2879b37
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e2879b37
+  type: docker
+- arguments:
+    rev_fix: 7ad623dc
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:7ad623dc
+  type: docker
+- arguments:
+    rev_fix: bbbbd079
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:bbbbd079
+  type: docker
+- arguments:
+    rev_fix: f3cbbef4
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f3cbbef4
+  type: docker
+- arguments:
+    rev_fix: a3c51698
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a3c51698
+  type: docker
+- arguments:
+    rev_fix: be603da5
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:be603da5
+  type: docker
+- arguments:
+    rev_fix: f2c10105
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f2c10105
+  type: docker
+- arguments:
+    rev_fix: 103119fe
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:103119fe
+  type: docker
+- arguments:
+    rev_fix: c87929e9
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c87929e9
+  type: docker
+- arguments:
+    rev_fix: 224d4500
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:224d4500
+  type: docker
+- arguments:
+    rev_fix: 8f0e7e06
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8f0e7e06
+  type: docker
+- arguments:
+    rev_fix: 4b38d444
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4b38d444
+  type: docker
+- arguments:
+    rev_fix: 6a62b115
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:6a62b115
+  type: docker
+- arguments:
+    rev_fix: 7935bf70
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:7935bf70
+  type: docker
+- arguments:
+    rev_fix: 0a69c13b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0a69c13b
+  type: docker
+- arguments:
+    rev_fix: 4e3d0ae0
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4e3d0ae0
+  type: docker
+- arguments:
+    rev_fix: 2e6b6e47
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2e6b6e47
+  type: docker
+- arguments:
+    rev_fix: f79ac46d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f79ac46d
+  type: docker
+- arguments:
+    rev_fix: 21cd73e8
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:21cd73e8
+  type: docker
+- arguments:
+    rev_fix: 5644dd86
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5644dd86
+  type: docker
+- arguments:
+    rev_fix: 7613964e
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:7613964e
+  type: docker
+- arguments:
+    rev_fix: c8a1e48f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c8a1e48f
+  type: docker
+- arguments:
+    rev_fix: 9ac892ac
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:9ac892ac
+  type: docker
+- arguments:
+    rev_fix: 7056484e
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:7056484e
+  type: docker
+- arguments:
+    rev_fix: a035d5ad
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a035d5ad
+  type: docker
+- arguments:
+    rev_fix: '64629914'
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:64629914
+  type: docker
+- arguments:
+    rev_fix: 55d8f440
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:55d8f440
+  type: docker
+- arguments:
+    rev_fix: 0f9e50d6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0f9e50d6
+  type: docker
+- arguments:
+    rev_fix: b344a7ed
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:b344a7ed
+  type: docker
+- arguments:
+    rev_fix: 301d4cc4
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:301d4cc4
+  type: docker
+- arguments:
+    rev_fix: 11576a0f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:11576a0f
+  type: docker
+- arguments:
+    rev_fix: 2a47337d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2a47337d
+  type: docker
+- arguments:
+    rev_fix: 8629637c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8629637c
+  type: docker
+- arguments:
+    rev_fix: da4a36c4
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:da4a36c4
+  type: docker
+- arguments:
+    rev_fix: 99ca7797
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:99ca7797
+  type: docker
+- arguments:
+    rev_fix: 4185d179
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4185d179
+  type: docker
+- arguments:
+    rev_fix: 91bff632
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:91bff632
+  type: docker
+- arguments:
+    rev_fix: 44dbf501
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:44dbf501
+  type: docker
+- arguments:
+    rev_fix: 28b98a17
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:28b98a17
+  type: docker
+- arguments:
+    rev_fix: 2dbfc615
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2dbfc615
+  type: docker
+- arguments:
+    rev_fix: 6d3acba0
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:6d3acba0
+  type: docker
+- arguments:
+    rev_fix: 1a249a81
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:1a249a81
+  type: docker
+- arguments:
+    rev_fix: ef0e37b4
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ef0e37b4
+  type: docker
+- arguments:
+    rev_fix: 0a88281a
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0a88281a
+  type: docker
+- arguments:
+    rev_fix: 279aff87
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:279aff87
+  type: docker
+- arguments:
+    rev_fix: b8f98aba
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:b8f98aba
+  type: docker
+- arguments:
+    rev_fix: e9861de2
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e9861de2
+  type: docker
+- arguments:
+    rev_fix: af282706
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:af282706
+  type: docker
+- arguments:
+    rev_fix: f53181ec
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f53181ec
+  type: docker
+- arguments:
+    rev_fix: e1b7e53c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e1b7e53c
+  type: docker
+- arguments:
+    rev_fix: 8640e117
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8640e117
+  type: docker
+- arguments:
+    rev_fix: 197d83e3
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:197d83e3
+  type: docker
+- arguments:
+    rev_fix: f51478ee
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f51478ee
+  type: docker
+- arguments:
+    rev_fix: 5b343885
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5b343885
+  type: docker
+- arguments:
+    rev_fix: ea64438e
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ea64438e
+  type: docker
+- arguments:
+    rev_fix: 08412391
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:08412391
+  type: docker
+- arguments:
+    rev_fix: 817c893f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:817c893f
+  type: docker
+- arguments:
+    rev_fix: f29ad3a2
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f29ad3a2
+  type: docker
+- arguments:
+    rev_fix: c53a0fcf
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c53a0fcf
+  type: docker
+- arguments:
+    rev_fix: 7dda8afd
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:7dda8afd
+  type: docker
+- arguments:
+    rev_fix: aabcc2bb
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:aabcc2bb
+  type: docker
+- arguments:
+    rev_fix: 7d5d0d12
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:7d5d0d12
+  type: docker
+- arguments:
+    rev_fix: ac364c93
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ac364c93
+  type: docker
+- arguments:
+    rev_fix: 71f61c9b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:71f61c9b
+  type: docker
+- arguments:
+    rev_fix: 982ce56d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:982ce56d
+  type: docker
+- arguments:
+    rev_fix: '27969175'
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:27969175
+  type: docker
+- arguments:
+    rev_fix: 802ab79c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:802ab79c
+  type: docker
+- arguments:
+    rev_fix: bc86a504
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:bc86a504
+  type: docker
+- arguments:
+    rev_fix: 4e1c51aa
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4e1c51aa
+  type: docker
+- arguments:
+    rev_fix: 1648ecc6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:1648ecc6
+  type: docker
+- arguments:
+    rev_fix: c73c9f03
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c73c9f03
+  type: docker
+- arguments:
+    rev_fix: e1bf4af1
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e1bf4af1
+  type: docker
+- arguments:
+    rev_fix: 0431b7e1
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:0431b7e1
+  type: docker
+- arguments:
+    rev_fix: 311bba14
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:311bba14
+  type: docker
+- arguments:
+    rev_fix: 4f242aed
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4f242aed
+  type: docker
+- arguments:
+    rev_fix: fe6ad357
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:fe6ad357
+  type: docker
+- arguments:
+    rev_fix: 5cc87729
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5cc87729
+  type: docker
+- arguments:
+    rev_fix: 633e91b7
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:633e91b7
+  type: docker
+- arguments:
+    rev_fix: f5b1114a
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f5b1114a
+  type: docker
+- arguments:
+    rev_fix: f29f7d97
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f29f7d97
+  type: docker
+- arguments:
+    rev_fix: 2a82d1b0
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2a82d1b0
+  type: docker
+- arguments:
+    rev_fix: 6f3458eb
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:6f3458eb
+  type: docker
+- arguments:
+    rev_fix: fb49cd82
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:fb49cd82
+  type: docker
+- arguments:
+    rev_fix: 78acea82
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:78acea82
+  type: docker
+- arguments:
+    rev_fix: 5499c6ea
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5499c6ea
+  type: docker
+- arguments:
+    rev_fix: 4036f50f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:4036f50f
+  type: docker
+- arguments:
+    rev_fix: f13b4546
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f13b4546
+  type: docker
+- arguments:
+    rev_fix: 8b79798e
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:8b79798e
+  type: docker
+- arguments:
+    rev_fix: 34b11f7b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:34b11f7b
+  type: docker
+- arguments:
+    rev_fix: 9672742b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:9672742b
+  type: docker
+- arguments:
+    rev_fix: 05248738
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:05248738
+  type: docker
+- arguments:
+    rev_fix: 02b64e25
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:02b64e25
+  type: docker
+- arguments:
+    rev_fix: 47ab02d6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:47ab02d6
+  type: docker
+- arguments:
+    rev_fix: 399970e7
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:399970e7
+  type: docker
+- arguments:
+    rev_fix: 5a40ee7a
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5a40ee7a
+  type: docker
+- arguments:
+    rev_fix: 1772a624
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:1772a624
+  type: docker
+- arguments:
+    rev_fix: ea9ae31a
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ea9ae31a
+  type: docker
+- arguments:
+    rev_fix: b21bc5a8
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:b21bc5a8
+  type: docker
+- arguments:
+    rev_fix: 24e1f074
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:24e1f074
+  type: docker
+- arguments:
+    rev_fix: facd8fc8
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:facd8fc8
+  type: docker
+- arguments:
+    rev_fix: f1bedc70
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f1bedc70
+  type: docker
+- arguments:
+    rev_fix: 6bac13f9
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:6bac13f9
+  type: docker
+- arguments:
+    rev_fix: 9f59f272
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:9f59f272
+  type: docker
+- arguments:
+    rev_fix: d203f029
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d203f029
+  type: docker
+- arguments:
+    rev_fix: d10e3bc7
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d10e3bc7
+  type: docker
+- arguments:
+    rev_fix: 31e3f329
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:31e3f329
+  type: docker
+- arguments:
+    rev_fix: c7961a72
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c7961a72
+  type: docker
+- arguments:
+    rev_fix: e843bf3d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e843bf3d
+  type: docker
+- arguments:
+    rev_fix: 429f9004
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:429f9004
+  type: docker
+- arguments:
+    rev_fix: 1b52ee21
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:1b52ee21
+  type: docker
+- arguments:
+    rev_fix: '36634265'
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:36634265
+  type: docker
+- arguments:
+    rev_fix: d65d7d95
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d65d7d95
+  type: docker
+- arguments:
+    rev_fix: d2bd818b
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d2bd818b
+  type: docker
+- arguments:
+    rev_fix: a7b32caf
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a7b32caf
+  type: docker
+- arguments:
+    rev_fix: a185fa95
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a185fa95
+  type: docker
+- arguments:
+    rev_fix: 9f0f482d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:9f0f482d
+  type: docker
+- arguments:
+    rev_fix: cdb532a5
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:cdb532a5
+  type: docker
+- arguments:
+    rev_fix: 95d944f6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:95d944f6
+  type: docker
+- arguments:
+    rev_fix: 24dd1676
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:24dd1676
+  type: docker
+- arguments:
+    rev_fix: 37040adf
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:37040adf
+  type: docker
+- arguments:
+    rev_fix: 476a6d01
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:476a6d01
+  type: docker
+- arguments:
+    rev_fix: 1007f2ef
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:1007f2ef
+  type: docker
+- arguments:
+    rev_fix: 9d3224ef
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:9d3224ef
+  type: docker
+- arguments:
+    rev_fix: df1c0d92
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:df1c0d92
+  type: docker
+- arguments:
+    rev_fix: '48135267'
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:48135267
+  type: docker
+- arguments:
+    rev_fix: 9c3b9907
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:9c3b9907
+  type: docker
+- arguments:
+    rev_fix: 70371be4
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:70371be4
+  type: docker
+- arguments:
+    rev_fix: ccaa7a52
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ccaa7a52
+  type: docker
+- arguments:
+    rev_fix: 2dab40ab
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2dab40ab
+  type: docker
+- arguments:
+    rev_fix: 08dc730d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:08dc730d
+  type: docker
+- arguments:
+    rev_fix: 16f99ebc
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:16f99ebc
+  type: docker
+- arguments:
+    rev_fix: 576af6d4
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:576af6d4
+  type: docker
+- arguments:
+    rev_fix: ff40fa6a
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:ff40fa6a
+  type: docker
+- arguments:
+    rev_fix: 393c893c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:393c893c
+  type: docker
+- arguments:
+    rev_fix: e583ade6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e583ade6
+  type: docker
+- arguments:
+    rev_fix: e77b54c7
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e77b54c7
+  type: docker
+- arguments:
+    rev_fix: a0151aa6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a0151aa6
+  type: docker
+- arguments:
+    rev_fix: af774256
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:af774256
+  type: docker
+- arguments:
+    rev_fix: d3de77f7
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d3de77f7
+  type: docker
+- arguments:
+    rev_fix: 269e02ee
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:269e02ee
+  type: docker
+- arguments:
+    rev_fix: 5fbe53a8
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5fbe53a8
+  type: docker
+- arguments:
+    rev_fix: 3c9ba94f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:3c9ba94f
+  type: docker
+- arguments:
+    rev_fix: 7cf60e61
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:7cf60e61
+  type: docker
+- arguments:
+    rev_fix: 889d1bb3
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:889d1bb3
+  type: docker
+- arguments:
+    rev_fix: 6f32f523
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:6f32f523
+  type: docker
+- arguments:
+    rev_fix: 5d3ddf1f
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:5d3ddf1f
+  type: docker
+- arguments:
+    rev_fix: 75459b09
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:75459b09
+  type: docker
+- arguments:
+    rev_fix: 07c7c394
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:07c7c394
+  type: docker
+- arguments:
+    rev_fix: f79b9072
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f79b9072
+  type: docker
+- arguments:
+    rev_fix: c091c8e0
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:c091c8e0
+  type: docker
+- arguments:
+    rev_fix: d8ff5dcf
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d8ff5dcf
+  type: docker
+- arguments:
+    rev_fix: a28070e0
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a28070e0
+  type: docker
+- arguments:
+    rev_fix: 72d76558
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:72d76558
+  type: docker
+- arguments:
+    rev_fix: dcdeae41
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:dcdeae41
+  type: docker
+- arguments:
+    rev_fix: 2a216ce9
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:2a216ce9
+  type: docker
+- arguments:
+    rev_fix: 357d6c2d
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:357d6c2d
+  type: docker
+- arguments:
+    rev_fix: db871cc5
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:db871cc5
+  type: docker
+- arguments:
+    rev_fix: a3450a95
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a3450a95
+  type: docker
+- arguments:
+    rev_fix: 52c4715c
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:52c4715c
+  type: docker
+- arguments:
+    rev_fix: cfe6e209
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:cfe6e209
+  type: docker
+- arguments:
+    rev_fix: d40349d6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d40349d6
+  type: docker
+- arguments:
+    rev_fix: f4e71aff
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:f4e71aff
+  type: docker
+- arguments:
+    rev_fix: a6fd94c6
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a6fd94c6
+  type: docker
+- arguments:
+    rev_fix: e9b6c764
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:e9b6c764
+  type: docker
+- arguments:
+    rev_fix: 339dac18
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:339dac18
+  type: docker
+- arguments:
+    rev_fix: 3831a0ed
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:3831a0ed
+  type: docker
+- arguments:
+    rev_fix: 71cbcacf
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:71cbcacf
+  type: docker
+- arguments:
+    rev_fix: 148fd889
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:148fd889
+  type: docker
+- arguments:
+    rev_fix: d362bb45
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d362bb45
+  type: docker
+- arguments:
+    rev_fix: d0fb332e
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:d0fb332e
+  type: docker
+- arguments:
+    rev_fix: fdd509a7
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:fdd509a7
+  type: docker
+- arguments:
+    rev_fix: fb0f5d46
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:fb0f5d46
+  type: docker
+- arguments:
+    rev_fix: a2a3eed0
+  depends-on: squareslab/ardubugs:base
+  file: Dockerfile.bug
+  tag: squareslab/ardubugs:a2a3eed0
+  type: docker
+bugs:
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:1a207c91
+  languages:
+  - cpp
+  name: ardubugs:1a207c91
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e2d4182c
+  languages:
+  - cpp
+  name: ardubugs:e2d4182c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c9927e6a
+  languages:
+  - cpp
+  name: ardubugs:c9927e6a
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:3d13d984
+  languages:
+  - cpp
+  name: ardubugs:3d13d984
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2e451eb2
+  languages:
+  - cpp
+  name: ardubugs:2e451eb2
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ebeb0923
+  languages:
+  - cpp
+  name: ardubugs:ebeb0923
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ba866419
+  languages:
+  - cpp
+  name: ardubugs:ba866419
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:32dc59ba
+  languages:
+  - cpp
+  name: ardubugs:32dc59ba
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f29951c2
+  languages:
+  - cpp
+  name: ardubugs:f29951c2
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:92cdb541
+  languages:
+  - cpp
+  name: ardubugs:92cdb541
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:87c076da
+  languages:
+  - cpp
+  name: ardubugs:87c076da
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:010665f9
+  languages:
+  - cpp
+  name: ardubugs:010665f9
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:436d0f8c
+  languages:
+  - cpp
+  name: ardubugs:436d0f8c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0e7f1204
+  languages:
+  - cpp
+  name: ardubugs:0e7f1204
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:3eeff938
+  languages:
+  - cpp
+  name: ardubugs:3eeff938
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:10b89db4
+  languages:
+  - cpp
+  name: ardubugs:10b89db4
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c5d17a9d
+  languages:
+  - cpp
+  name: ardubugs:c5d17a9d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:af97a397
+  languages:
+  - cpp
+  name: ardubugs:af97a397
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:304c9b6e
+  languages:
+  - cpp
+  name: ardubugs:304c9b6e
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:3410db50
+  languages:
+  - cpp
+  name: ardubugs:3410db50
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:b31d2a59
+  languages:
+  - cpp
+  name: ardubugs:b31d2a59
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:742cdf6b
+  languages:
+  - cpp
+  name: ardubugs:742cdf6b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:378bd84b
+  languages:
+  - cpp
+  name: ardubugs:378bd84b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c846cc24
+  languages:
+  - cpp
+  name: ardubugs:c846cc24
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0d1e50b5
+  languages:
+  - cpp
+  name: ardubugs:0d1e50b5
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:1e2e24ee
+  languages:
+  - cpp
+  name: ardubugs:1e2e24ee
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:b5a2bf2c
+  languages:
+  - cpp
+  name: ardubugs:b5a2bf2c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:70265f91
+  languages:
+  - cpp
+  name: ardubugs:70265f91
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:263f6856
+  languages:
+  - cpp
+  name: ardubugs:263f6856
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4e017bf5
+  languages:
+  - cpp
+  name: ardubugs:4e017bf5
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:cbbc4d67
+  languages:
+  - cpp
+  name: ardubugs:cbbc4d67
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0051ecb2
+  languages:
+  - cpp
+  name: ardubugs:0051ecb2
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:68630a86
+  languages:
+  - cpp
+  name: ardubugs:68630a86
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:3349e244
+  languages:
+  - cpp
+  name: ardubugs:3349e244
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e732cda5
+  languages:
+  - cpp
+  name: ardubugs:e732cda5
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:53f02162
+  languages:
+  - cpp
+  name: ardubugs:53f02162
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5061b290
+  languages:
+  - cpp
+  name: ardubugs:5061b290
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:aa466183
+  languages:
+  - cpp
+  name: ardubugs:aa466183
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5b277f4f
+  languages:
+  - cpp
+  name: ardubugs:5b277f4f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:22422bd7
+  languages:
+  - cpp
+  name: ardubugs:22422bd7
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8681911a
+  languages:
+  - cpp
+  name: ardubugs:8681911a
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:07564aa0
+  languages:
+  - cpp
+  name: ardubugs:07564aa0
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:b9cee76b
+  languages:
+  - cpp
+  name: ardubugs:b9cee76b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8fb318a6
+  languages:
+  - cpp
+  name: ardubugs:8fb318a6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8ce85516
+  languages:
+  - cpp
+  name: ardubugs:8ce85516
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a5c55c3f
+  languages:
+  - cpp
+  name: ardubugs:a5c55c3f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:6bcd9e6f
+  languages:
+  - cpp
+  name: ardubugs:6bcd9e6f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4e7e84fc
+  languages:
+  - cpp
+  name: ardubugs:4e7e84fc
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0095f616
+  languages:
+  - cpp
+  name: ardubugs:0095f616
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a310d373
+  languages:
+  - cpp
+  name: ardubugs:a310d373
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:436062ef
+  languages:
+  - cpp
+  name: ardubugs:436062ef
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2887e481
+  languages:
+  - cpp
+  name: ardubugs:2887e481
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:41b584ac
+  languages:
+  - cpp
+  name: ardubugs:41b584ac
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8a6e5ffe
+  languages:
+  - cpp
+  name: ardubugs:8a6e5ffe
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f3638f42
+  languages:
+  - cpp
+  name: ardubugs:f3638f42
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e2879b37
+  languages:
+  - cpp
+  name: ardubugs:e2879b37
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:7ad623dc
+  languages:
+  - cpp
+  name: ardubugs:7ad623dc
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:bbbbd079
+  languages:
+  - cpp
+  name: ardubugs:bbbbd079
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f3cbbef4
+  languages:
+  - cpp
+  name: ardubugs:f3cbbef4
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a3c51698
+  languages:
+  - cpp
+  name: ardubugs:a3c51698
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:be603da5
+  languages:
+  - cpp
+  name: ardubugs:be603da5
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f2c10105
+  languages:
+  - cpp
+  name: ardubugs:f2c10105
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:103119fe
+  languages:
+  - cpp
+  name: ardubugs:103119fe
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c87929e9
+  languages:
+  - cpp
+  name: ardubugs:c87929e9
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:224d4500
+  languages:
+  - cpp
+  name: ardubugs:224d4500
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8f0e7e06
+  languages:
+  - cpp
+  name: ardubugs:8f0e7e06
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4b38d444
+  languages:
+  - cpp
+  name: ardubugs:4b38d444
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:6a62b115
+  languages:
+  - cpp
+  name: ardubugs:6a62b115
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:7935bf70
+  languages:
+  - cpp
+  name: ardubugs:7935bf70
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0a69c13b
+  languages:
+  - cpp
+  name: ardubugs:0a69c13b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4e3d0ae0
+  languages:
+  - cpp
+  name: ardubugs:4e3d0ae0
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2e6b6e47
+  languages:
+  - cpp
+  name: ardubugs:2e6b6e47
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f79ac46d
+  languages:
+  - cpp
+  name: ardubugs:f79ac46d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:21cd73e8
+  languages:
+  - cpp
+  name: ardubugs:21cd73e8
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5644dd86
+  languages:
+  - cpp
+  name: ardubugs:5644dd86
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:7613964e
+  languages:
+  - cpp
+  name: ardubugs:7613964e
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c8a1e48f
+  languages:
+  - cpp
+  name: ardubugs:c8a1e48f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:9ac892ac
+  languages:
+  - cpp
+  name: ardubugs:9ac892ac
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:7056484e
+  languages:
+  - cpp
+  name: ardubugs:7056484e
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a035d5ad
+  languages:
+  - cpp
+  name: ardubugs:a035d5ad
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:64629914
+  languages:
+  - cpp
+  name: ardubugs:64629914
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:55d8f440
+  languages:
+  - cpp
+  name: ardubugs:55d8f440
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0f9e50d6
+  languages:
+  - cpp
+  name: ardubugs:0f9e50d6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:b344a7ed
+  languages:
+  - cpp
+  name: ardubugs:b344a7ed
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:301d4cc4
+  languages:
+  - cpp
+  name: ardubugs:301d4cc4
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:11576a0f
+  languages:
+  - cpp
+  name: ardubugs:11576a0f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2a47337d
+  languages:
+  - cpp
+  name: ardubugs:2a47337d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8629637c
+  languages:
+  - cpp
+  name: ardubugs:8629637c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:da4a36c4
+  languages:
+  - cpp
+  name: ardubugs:da4a36c4
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:99ca7797
+  languages:
+  - cpp
+  name: ardubugs:99ca7797
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4185d179
+  languages:
+  - cpp
+  name: ardubugs:4185d179
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:91bff632
+  languages:
+  - cpp
+  name: ardubugs:91bff632
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:44dbf501
+  languages:
+  - cpp
+  name: ardubugs:44dbf501
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:28b98a17
+  languages:
+  - cpp
+  name: ardubugs:28b98a17
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2dbfc615
+  languages:
+  - cpp
+  name: ardubugs:2dbfc615
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:6d3acba0
+  languages:
+  - cpp
+  name: ardubugs:6d3acba0
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:1a249a81
+  languages:
+  - cpp
+  name: ardubugs:1a249a81
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ef0e37b4
+  languages:
+  - cpp
+  name: ardubugs:ef0e37b4
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0a88281a
+  languages:
+  - cpp
+  name: ardubugs:0a88281a
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:279aff87
+  languages:
+  - cpp
+  name: ardubugs:279aff87
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:b8f98aba
+  languages:
+  - cpp
+  name: ardubugs:b8f98aba
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e9861de2
+  languages:
+  - cpp
+  name: ardubugs:e9861de2
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:af282706
+  languages:
+  - cpp
+  name: ardubugs:af282706
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f53181ec
+  languages:
+  - cpp
+  name: ardubugs:f53181ec
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e1b7e53c
+  languages:
+  - cpp
+  name: ardubugs:e1b7e53c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8640e117
+  languages:
+  - cpp
+  name: ardubugs:8640e117
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:197d83e3
+  languages:
+  - cpp
+  name: ardubugs:197d83e3
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f51478ee
+  languages:
+  - cpp
+  name: ardubugs:f51478ee
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5b343885
+  languages:
+  - cpp
+  name: ardubugs:5b343885
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ea64438e
+  languages:
+  - cpp
+  name: ardubugs:ea64438e
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:08412391
+  languages:
+  - cpp
+  name: ardubugs:08412391
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:817c893f
+  languages:
+  - cpp
+  name: ardubugs:817c893f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f29ad3a2
+  languages:
+  - cpp
+  name: ardubugs:f29ad3a2
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c53a0fcf
+  languages:
+  - cpp
+  name: ardubugs:c53a0fcf
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:7dda8afd
+  languages:
+  - cpp
+  name: ardubugs:7dda8afd
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:aabcc2bb
+  languages:
+  - cpp
+  name: ardubugs:aabcc2bb
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:7d5d0d12
+  languages:
+  - cpp
+  name: ardubugs:7d5d0d12
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ac364c93
+  languages:
+  - cpp
+  name: ardubugs:ac364c93
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:71f61c9b
+  languages:
+  - cpp
+  name: ardubugs:71f61c9b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:982ce56d
+  languages:
+  - cpp
+  name: ardubugs:982ce56d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:27969175
+  languages:
+  - cpp
+  name: ardubugs:27969175
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:802ab79c
+  languages:
+  - cpp
+  name: ardubugs:802ab79c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:bc86a504
+  languages:
+  - cpp
+  name: ardubugs:bc86a504
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4e1c51aa
+  languages:
+  - cpp
+  name: ardubugs:4e1c51aa
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:1648ecc6
+  languages:
+  - cpp
+  name: ardubugs:1648ecc6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c73c9f03
+  languages:
+  - cpp
+  name: ardubugs:c73c9f03
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e1bf4af1
+  languages:
+  - cpp
+  name: ardubugs:e1bf4af1
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:0431b7e1
+  languages:
+  - cpp
+  name: ardubugs:0431b7e1
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:311bba14
+  languages:
+  - cpp
+  name: ardubugs:311bba14
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4f242aed
+  languages:
+  - cpp
+  name: ardubugs:4f242aed
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:fe6ad357
+  languages:
+  - cpp
+  name: ardubugs:fe6ad357
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5cc87729
+  languages:
+  - cpp
+  name: ardubugs:5cc87729
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:633e91b7
+  languages:
+  - cpp
+  name: ardubugs:633e91b7
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f5b1114a
+  languages:
+  - cpp
+  name: ardubugs:f5b1114a
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f29f7d97
+  languages:
+  - cpp
+  name: ardubugs:f29f7d97
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2a82d1b0
+  languages:
+  - cpp
+  name: ardubugs:2a82d1b0
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:6f3458eb
+  languages:
+  - cpp
+  name: ardubugs:6f3458eb
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:fb49cd82
+  languages:
+  - cpp
+  name: ardubugs:fb49cd82
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:78acea82
+  languages:
+  - cpp
+  name: ardubugs:78acea82
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5499c6ea
+  languages:
+  - cpp
+  name: ardubugs:5499c6ea
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:4036f50f
+  languages:
+  - cpp
+  name: ardubugs:4036f50f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f13b4546
+  languages:
+  - cpp
+  name: ardubugs:f13b4546
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:8b79798e
+  languages:
+  - cpp
+  name: ardubugs:8b79798e
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:34b11f7b
+  languages:
+  - cpp
+  name: ardubugs:34b11f7b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:9672742b
+  languages:
+  - cpp
+  name: ardubugs:9672742b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:05248738
+  languages:
+  - cpp
+  name: ardubugs:05248738
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:02b64e25
+  languages:
+  - cpp
+  name: ardubugs:02b64e25
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:47ab02d6
+  languages:
+  - cpp
+  name: ardubugs:47ab02d6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:399970e7
+  languages:
+  - cpp
+  name: ardubugs:399970e7
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5a40ee7a
+  languages:
+  - cpp
+  name: ardubugs:5a40ee7a
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:1772a624
+  languages:
+  - cpp
+  name: ardubugs:1772a624
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ea9ae31a
+  languages:
+  - cpp
+  name: ardubugs:ea9ae31a
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:b21bc5a8
+  languages:
+  - cpp
+  name: ardubugs:b21bc5a8
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:24e1f074
+  languages:
+  - cpp
+  name: ardubugs:24e1f074
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:facd8fc8
+  languages:
+  - cpp
+  name: ardubugs:facd8fc8
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f1bedc70
+  languages:
+  - cpp
+  name: ardubugs:f1bedc70
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:6bac13f9
+  languages:
+  - cpp
+  name: ardubugs:6bac13f9
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:9f59f272
+  languages:
+  - cpp
+  name: ardubugs:9f59f272
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d203f029
+  languages:
+  - cpp
+  name: ardubugs:d203f029
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d10e3bc7
+  languages:
+  - cpp
+  name: ardubugs:d10e3bc7
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:31e3f329
+  languages:
+  - cpp
+  name: ardubugs:31e3f329
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c7961a72
+  languages:
+  - cpp
+  name: ardubugs:c7961a72
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e843bf3d
+  languages:
+  - cpp
+  name: ardubugs:e843bf3d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:429f9004
+  languages:
+  - cpp
+  name: ardubugs:429f9004
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:1b52ee21
+  languages:
+  - cpp
+  name: ardubugs:1b52ee21
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:36634265
+  languages:
+  - cpp
+  name: ardubugs:36634265
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d65d7d95
+  languages:
+  - cpp
+  name: ardubugs:d65d7d95
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d2bd818b
+  languages:
+  - cpp
+  name: ardubugs:d2bd818b
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a7b32caf
+  languages:
+  - cpp
+  name: ardubugs:a7b32caf
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a185fa95
+  languages:
+  - cpp
+  name: ardubugs:a185fa95
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:9f0f482d
+  languages:
+  - cpp
+  name: ardubugs:9f0f482d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:cdb532a5
+  languages:
+  - cpp
+  name: ardubugs:cdb532a5
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:95d944f6
+  languages:
+  - cpp
+  name: ardubugs:95d944f6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:24dd1676
+  languages:
+  - cpp
+  name: ardubugs:24dd1676
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:37040adf
+  languages:
+  - cpp
+  name: ardubugs:37040adf
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:476a6d01
+  languages:
+  - cpp
+  name: ardubugs:476a6d01
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:1007f2ef
+  languages:
+  - cpp
+  name: ardubugs:1007f2ef
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:9d3224ef
+  languages:
+  - cpp
+  name: ardubugs:9d3224ef
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:df1c0d92
+  languages:
+  - cpp
+  name: ardubugs:df1c0d92
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:48135267
+  languages:
+  - cpp
+  name: ardubugs:48135267
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:9c3b9907
+  languages:
+  - cpp
+  name: ardubugs:9c3b9907
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:70371be4
+  languages:
+  - cpp
+  name: ardubugs:70371be4
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ccaa7a52
+  languages:
+  - cpp
+  name: ardubugs:ccaa7a52
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2dab40ab
+  languages:
+  - cpp
+  name: ardubugs:2dab40ab
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:08dc730d
+  languages:
+  - cpp
+  name: ardubugs:08dc730d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:16f99ebc
+  languages:
+  - cpp
+  name: ardubugs:16f99ebc
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:576af6d4
+  languages:
+  - cpp
+  name: ardubugs:576af6d4
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:ff40fa6a
+  languages:
+  - cpp
+  name: ardubugs:ff40fa6a
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:393c893c
+  languages:
+  - cpp
+  name: ardubugs:393c893c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e583ade6
+  languages:
+  - cpp
+  name: ardubugs:e583ade6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e77b54c7
+  languages:
+  - cpp
+  name: ardubugs:e77b54c7
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a0151aa6
+  languages:
+  - cpp
+  name: ardubugs:a0151aa6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:af774256
+  languages:
+  - cpp
+  name: ardubugs:af774256
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d3de77f7
+  languages:
+  - cpp
+  name: ardubugs:d3de77f7
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:269e02ee
+  languages:
+  - cpp
+  name: ardubugs:269e02ee
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5fbe53a8
+  languages:
+  - cpp
+  name: ardubugs:5fbe53a8
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:3c9ba94f
+  languages:
+  - cpp
+  name: ardubugs:3c9ba94f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:7cf60e61
+  languages:
+  - cpp
+  name: ardubugs:7cf60e61
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:889d1bb3
+  languages:
+  - cpp
+  name: ardubugs:889d1bb3
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:6f32f523
+  languages:
+  - cpp
+  name: ardubugs:6f32f523
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:5d3ddf1f
+  languages:
+  - cpp
+  name: ardubugs:5d3ddf1f
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:75459b09
+  languages:
+  - cpp
+  name: ardubugs:75459b09
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:07c7c394
+  languages:
+  - cpp
+  name: ardubugs:07c7c394
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f79b9072
+  languages:
+  - cpp
+  name: ardubugs:f79b9072
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:c091c8e0
+  languages:
+  - cpp
+  name: ardubugs:c091c8e0
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d8ff5dcf
+  languages:
+  - cpp
+  name: ardubugs:d8ff5dcf
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a28070e0
+  languages:
+  - cpp
+  name: ardubugs:a28070e0
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:72d76558
+  languages:
+  - cpp
+  name: ardubugs:72d76558
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:dcdeae41
+  languages:
+  - cpp
+  name: ardubugs:dcdeae41
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:2a216ce9
+  languages:
+  - cpp
+  name: ardubugs:2a216ce9
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:357d6c2d
+  languages:
+  - cpp
+  name: ardubugs:357d6c2d
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:db871cc5
+  languages:
+  - cpp
+  name: ardubugs:db871cc5
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a3450a95
+  languages:
+  - cpp
+  name: ardubugs:a3450a95
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:52c4715c
+  languages:
+  - cpp
+  name: ardubugs:52c4715c
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:cfe6e209
+  languages:
+  - cpp
+  name: ardubugs:cfe6e209
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d40349d6
+  languages:
+  - cpp
+  name: ardubugs:d40349d6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:f4e71aff
+  languages:
+  - cpp
+  name: ardubugs:f4e71aff
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a6fd94c6
+  languages:
+  - cpp
+  name: ardubugs:a6fd94c6
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:e9b6c764
+  languages:
+  - cpp
+  name: ardubugs:e9b6c764
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:339dac18
+  languages:
+  - cpp
+  name: ardubugs:339dac18
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:3831a0ed
+  languages:
+  - cpp
+  name: ardubugs:3831a0ed
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:71cbcacf
+  languages:
+  - cpp
+  name: ardubugs:71cbcacf
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:148fd889
+  languages:
+  - cpp
+  name: ardubugs:148fd889
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d362bb45
+  languages:
+  - cpp
+  name: ardubugs:d362bb45
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:d0fb332e
+  languages:
+  - cpp
+  name: ardubugs:d0fb332e
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:fdd509a7
+  languages:
+  - cpp
+  name: ardubugs:fdd509a7
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:fb0f5d46
+  languages:
+  - cpp
+  name: ardubugs:fb0f5d46
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+- compiler:
+    command: ./builder
+    command_clean: exit 0
+    command_with_instrumentation: ./configure --instrumentation && ./builder
+    context: /opt/ardupilot
+    time-limit: 120
+    type: simple
+  coverage:
+    files-to-instrument:
+    - APMrover2/APMrover2.cpp
+    - ArduCopter/ArduCopter.cpp
+    - ArduPlane/ArduPlane.cpp
+  dataset: ardubugs
+  image: squareslab/ardubugs:a2a3eed0
+  languages:
+  - cpp
+  name: ardubugs:a2a3eed0
+  program: ardurover
+  source-location: /opt/ardupilot
+  test-harness:
+    type: empty
+version: '1.1'
