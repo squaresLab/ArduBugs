@@ -80,9 +80,7 @@ RUN cd /tmp \
 RUN sudo mkdir -p /opt \
  && sudo chown -R docker /opt \
  && cd /opt \
- && git clone git://github.com/ArduPilot/ArduPilot ardupilot \
- && cd ardupilot \
- && git submodule update --init --recursive
+ && git clone git://github.com/ArduPilot/ArduPilot ardupilot
 WORKDIR /opt/ardupilot
 
 ENV PATH "/home/docker/local/bin:${PATH}:/opt/ardupilot/Tools/autotest"
