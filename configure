@@ -1,0 +1,33 @@
+#!/bin/bash
+DIR_SRC=/opt/ardupilot
+DIR_BIN="${DIR_SRC}/build/sitl/bin"
+mkdir -p "${DIR_BIN}"
+
+if [[ "$1" == "--coverage" ]]; then
+  CXX_FLAGS="CXXFLAGS='--coverage'"
+  LD_FLAGS="LDFLAGS='--coverage'"
+else
+  CXX_FLAGS=""
+  LD_FLAGS=""
+fi
+
+function configure_make() {
+     (cd APMrover2 && make configure $CXX_FLAGS $LD_FLAGS) \
+  && (cd ArduPilot && make configure $CXX_FLAGS $LD_FLAGS) \
+  && (cd ArduCopter && make configure $CXX_FLAGS $LD_FLAGS)
+}
+
+function configure_waf() {
+  ./waf configure --no-submodule-update $CXX_FLAGS $LD_FLAGS
+}
+
+function configure() {
+  pushd "${DIR_SRC}"
+  if [ -f waf ]; then
+    configure_waf
+  else
+    configure_make
+  fi
+}
+
+configure

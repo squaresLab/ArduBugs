@@ -87,7 +87,8 @@ WORKDIR /opt/ardupilot
 
 ENV PATH "/home/docker/local/bin:${PATH}:/opt/ardupilot/Tools/autotest"
 
-COPY build /opt/ardupilot/build
+COPY builder /opt/ardupilot/builder
+COPY configure /opt/ardupilot/configure
 
 # remove unnecessary dependencies
 #RUN sudo apt-get remove -y \
