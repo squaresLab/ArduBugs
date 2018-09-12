@@ -13,7 +13,7 @@ fi
 
 function configure_make() {
      (cd APMrover2 && make configure $CXX_FLAGS $LD_FLAGS) \
-  && (cd ArduPilot && make configure $CXX_FLAGS $LD_FLAGS) \
+  && (cd ArduPlane && make configure $CXX_FLAGS $LD_FLAGS) \
   && (cd ArduCopter && make configure $CXX_FLAGS $LD_FLAGS)
 }
 
