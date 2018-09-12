@@ -83,7 +83,7 @@ RUN sudo mkdir -p /opt \
  && git clone git://github.com/ArduPilot/ArduPilot ardupilot
 WORKDIR /opt/ardupilot
 
-ENV PATH "/home/docker/local/bin:${PATH}:/opt/ardupilot/Tools/autotest"
+ENV PATH "/home/docker/.local/bin:${PATH}:/opt/ardupilot/Tools/autotest"
 
 COPY builder /opt/ardupilot/builder
 COPY configure /opt/ardupilot/configure
