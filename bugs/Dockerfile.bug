@@ -4,6 +4,6 @@ RUN cd /opt/ardupilot \
  && git clean -fd \
  && git checkout "${rev_fix}~1" \
  && git submodule update --init --recursive \
- && ./configure
+ && ./configure \
  && bear ./builder all \
  && sudo chown -R docker /opt
