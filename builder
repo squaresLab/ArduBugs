@@ -11,7 +11,7 @@ function build_make() {
       (cd ArduPlane && make sitl && mv ArduPlane.elf "${DIR_BIN}/arduplane");;
     copter)
       (cd ArduCopter && make sitl && mv ArduCopter.elf "${DIR_BIN}/arducopter");;
-    all)
+    all|"")
       build_make rover && build_make plane && build_make copter
   esac
 }
@@ -21,7 +21,7 @@ function build_waf() {
     rover) ./waf rover;;
     plane) ./waf plane;;
     copter) ./waf copter;;
-    all) ./waf build;;
+    all|"") ./waf build;;
   esac
 }
 

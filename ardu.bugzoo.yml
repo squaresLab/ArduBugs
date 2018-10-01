@@ -1816,7 +1816,7 @@ bugs:
 - compiler:
     command: ./builder
     command_clean: exit 0
-    command_with_instrumentation: ./configure --coverage && ./builder all
+    command_with_instrumentation: ./configure --coverage && ./builder
     context: /opt/ardupilot
     time-limit: 120
     type: simple
